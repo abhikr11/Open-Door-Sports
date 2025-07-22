@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/app/not-found.js"  ],
+, "src/app/not-found.js", "src/components/sportsEvents/EventContact.jsx"  ],
   "exclude": [
     "node_modules"
   ]
