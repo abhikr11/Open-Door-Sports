@@ -6,7 +6,7 @@ import KeyElements from "../../../components/intergratedProgram/KeyElements";
 import InclusiveApproach from "../../../components/intergratedProgram/InclusiveApproach";
 import ProgramStats from "../../../components/intergratedProgram/ProgramStats";
 import CallToAction from "../../../components/intergratedProgram/CallToAction";
-import Footer from "../../../components/footer/Footer";
+
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <InclusiveApproach />
       <ProgramStats />
       <CallToAction />
-      <Footer/>
+
     </div>
   );
 }

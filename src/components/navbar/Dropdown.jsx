@@ -26,11 +26,14 @@ export const Dropdown = ({ onClose }) => {
       ></i>
 
       <NavLink to="/" text="Home" className={linkBorder} />
-      <NavLink to="/aboutUs" text="About Us" className={linkBorder} />
-      <NavLink to="/services/parentToddler" text="Parent-Toddler" className={linkBorder} />
-      <NavLink to="/" text="Integrated Program" className={linkBorder} />
-      <NavLink to="/careers" text="Careers" className={linkBorder} />
+      <NavLink to="/about" text="About Us" className={linkBorder} />
       <NavLink to="/services/sports" text="Sports" className={linkBorder} />
+      <NavLink to="/gallery" text="Gallery" className={linkBorder} />
+      <NavLink to="/careers" text="Careers" className={linkBorder} />
+      <NavLink to="/#allProgram" text="Our Programs" className={linkBorder} />
+      <NavLink to="/services/parentToddler" text="Parent-Toddler" className={linkBorder} />
+      <NavLink to="/services/intergratedProgram" text="Integrated Program" className={linkBorder} />
+      <NavLink to="/services/birthdayEvents" text="Birthday Events" className={linkBorder} />
     </motion.div>
   );
 };
