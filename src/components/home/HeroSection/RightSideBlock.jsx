@@ -37,7 +37,7 @@ export default function RightSideBlock() {
 
   return (
     <motion.div
-      className="grid grid-cols-3 gap-4 w-full md:w-1/2 min-w-[300px] mt-10 md:mt-0 ml-0"
+      className="grid grid-cols-3 gap-4 w-full md:w-1/2 min-w-[300px] mt-10 md:mt-0 ml-0 "
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}

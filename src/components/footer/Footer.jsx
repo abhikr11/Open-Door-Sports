@@ -1,83 +1,118 @@
-// No need to import react-icons anymore
+'use client';
 
-import Link from 'next/link';
+export default function Footer() {
+  const quickLinks = [
+    { name: 'About Program', href: '#' },
+    { name: 'Key Elements', href: '#' },
+    { name: 'Enrollment', href: '#' },
+    { name: 'Success Stories', href: '#' },
+    { name: 'Contact', href: '#' }
+  ];
 
-const Footer = () => {
-    return (
-        <div className='bg-gray-900 text-white'>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 p-6 py-10 text-sm text-white md:px-10">
-                
-                {/* Address & Socials */}
-                <div className="space-y-3">
-                    <h1 className="text-xl font-semibold mb-8">LOGO</h1>
-                    <p className="mb-4 leading-relaxed">
-                        Pandit Nehru Marg, opposite DKV College,<br />
-                        Indradeep Society,<br />
-                        Jamnagar, Gujarat 361008
-                    </p>
+  const programs = [
+    { name: 'Mental Wellness', href: '#' },
+    { name: 'Physical Health', href: '#' },
+    { name: 'Nutrition Education', href: '#' },
+    { name: 'Academic Support', href: '#' },
+    { name: 'Special Needs', href: '#' }
+  ];
 
-                    <div className="flex space-x-4">
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 p-3 rounded-full">
-                            <i className="ri-facebook-fill text-lg"></i>
-                        </a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="bg-blue-400 hover:bg-blue-500 p-3 rounded-full">
-                            <i className="ri-twitter-fill text-lg"></i>
-                        </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="bg-pink-600 hover:bg-pink-700 p-3 rounded-full">
-                            <i className="ri-instagram-fill text-lg"></i>
-                        </a>
-                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="bg-red-600 hover:bg-red-700 p-3 rounded-full">
-                            <i className="ri-youtube-fill text-lg"></i>
-                        </a>
-                    </div>
-                </div>
+  const resources = [
+    { name: 'Parent Resources', href: '#' },
+    { name: 'Student Portal', href: '#' },
+    { name: 'Program Calendar', href: '#' },
+    { name: 'News & Updates', href: '#' },
+    { name: 'FAQ', href: '#' }
+  ];
 
-                {/* Useful Links */}
-                <div className="space-y-3">
-                    <h1 className="text-xl font-semibold mb-8">Useful Links</h1>
-                    <ul className="space-y-2">
-                        <li><Link href="/careers" className="hover:underline">Careers</Link></li>
-                        <li><Link href="/#gallery" className="hover:underline">Gallery</Link></li>
-                        <li><Link href="/services/sports" className="hover:underline">Sports Events</Link></li>
-                        <li><Link href="/services/parentToddler" className="hover:underline">Parent Toddler</Link></li>
-                        <li><Link href="/services/intergratedProgram" className="hover:underline">Integrated Program</Link></li>
-                    </ul>
-                </div>
-
-                {/* Contact Info */}
-                <div className="space-y-3">
-                    <h1 className="text-xl font-semibold mb-8">Get In Touch</h1>
-
-                    <IconWithText icon="ri-map-pin-2-fill">
-                        Pandit Nehru Marg, opposite DKV College,<br />
-                        Indradeep Society,<br />
-                        Jamnagar, Gujarat 361008
-                    </IconWithText>
-                    <IconWithText icon="ri-mail-line">
-                        contact@xaviers.co.in
-                    </IconWithText>
-                    <IconWithText icon="ri-phone-line">
-                        +91 288 2553908
-                    </IconWithText>
-                </div>
+  return (
+    <footer className="bg-gray-900 text-white py-16">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Pacifico, serif' }}>
+                OPEN DOOR SPORTS
+              </h3>
+              <p className="text-gray-400 leading-relaxed">
+                Nurturing holistic development through comprehensive education that encompasses mental wellness, physical health, nutrition, and academic excellence.
+              </p>
             </div>
-
-            <div className="text-center space-y-3 py-4">
-                <hr className="border-white/30" />
-                <Link href="#" className="hover:underline">
-                    Copyright © 2025 jha@avinash. All Rights Reserved
-                </Link>
+            <div className="flex space-x-4">
+              <button className="bg-blue-600 hover:bg-blue-700 p-3 rounded-full transition-colors cursor-pointer">
+                <i className="ri-facebook-fill w-5 h-5 flex items-center justify-center text-lg"></i>
+              </button>
+              <button className="bg-blue-400 hover:bg-blue-500 p-3 rounded-full transition-colors cursor-pointer">
+                <i className="ri-twitter-fill w-5 h-5 flex items-center justify-center text-lg"></i>
+              </button>
+              <button className="bg-pink-600 hover:bg-pink-700 p-3 rounded-full transition-colors cursor-pointer">
+                <i className="ri-instagram-fill w-5 h-5 flex items-center justify-center text-lg"></i>
+              </button>
+              <button className="bg-red-600 hover:bg-red-700 p-3 rounded-full transition-colors cursor-pointer">
+                <i className="ri-youtube-fill w-5 h-5 flex items-center justify-center text-lg"></i>
+              </button>
             </div>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
+            <ul className="space-y-3">
+              {quickLinks.map((link, index) => (
+                <li key={index}>
+                  <a href={link.href} className="text-gray-400 hover:text-white transition-colors cursor-pointer">
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-semibold mb-6">Programs</h4>
+            <ul className="space-y-3">
+              {programs.map((program, index) => (
+                <li key={index}>
+                  <a href={program.href} className="text-gray-400 hover:text-white transition-colors cursor-pointer">
+                    {program.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-semibold mb-6">Resources</h4>
+            <ul className="space-y-3">
+              {resources.map((resource, index) => (
+                <li key={index}>
+                  <a href={resource.href} className="text-gray-400 hover:text-white transition-colors cursor-pointer">
+                    {resource.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-    );
-};
 
-export default Footer;
-
-// Reusable Remix Icon with text
-const IconWithText = ({ icon, children }) => (
-    <div className="flex items-start gap-3">
-        <i className={`${icon} bg-white/50 p-2 rounded-full text-lg`} style={{ minWidth: 30 }}></i>
-        <p className="text-sm leading-relaxed">{children}</p>
-    </div>
-);
+        <div className="border-t border-gray-800 mt-12 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <a href="https://e-portfolio-avi.vercel.app/" className="text-gray-400 text-sm">
+              © 2025 Jha@Avinash. All rights reserved.
+            </a>
+            <div className="flex space-x-6 mt-4 md:mt-0">
+              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">
+                Privacy Policy
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">
+                Terms of Service
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">
+                Cookie Policy
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}

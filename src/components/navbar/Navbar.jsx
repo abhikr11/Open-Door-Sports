@@ -8,7 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import { ServiceMenu } from "./serviceMenu";
 
-export const  Navbar = () => {
+export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -16,19 +16,12 @@ export const  Navbar = () => {
   };
 
   return (
-    <div className="fixed top-0 z-50 w-full py-2 px-4 lg:pr-10 flex items-center justify-between bg-white/20 shadow-md">
-      
-      {/* Left: Logo + School Name */}
-      <div className="flex items-center gap-4">
-        {/* <img src="./logo.png" width={80} alt="Logo" /> */}
-        <SchoolName />
-      </div>
+    <div className="fixed top-0 z-50 w-full py-2 px-4 lg:pr-10 flex items-center justify-between bg-white/40 shadow-md">
+      <SchoolName />
 
-      {/* Center: Navigation Links */}
-      <div className="hidden md:flex gap-3 h-[65px] items-center relative">
-        <NavLink to="/" text="Home" />
+      <div className="hidden md:flex gap-4 h-[65px] items-center relative">
+        <NavLink to="/#" text="Home" />
         <NavLink to="/about" text="About Us" />
-        
         {/* Services with Dropdown */}
         <div className="relative">
           <button onClick={toggleDropdown}>
@@ -58,18 +51,22 @@ export const  Navbar = () => {
       </div>
 
       <div className="items-center gap-2">
-          <IconsBox />
-      </div> 
+        <IconsBox />
+      </div>
 
     </div>
   );
 };
 
+
 export const NavLink = ({ to, text, className = '' }) => {
   return (
     <Link
       href={to}
-      className={`hover:border-b-4 border-[#7B7EEE] h-12 p-3 text-nav-text font-medium text-[18px] transition duration-200 ${className}`}
+      className={`relative inline-block text-nav-text font-medium text-[18px] h-12 px-4 py-3 transition duration-200 
+        after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-0 
+        after:bg-gradient-to-r after:from-[#3b82f6] after:via-[#3730a3] after:to-[#1e3a8a]
+        after:transition-all after:duration-500 hover:after:w-full ${className}`}
     >
       {text}
     </Link>

@@ -16,18 +16,7 @@ export default function GalleryHero() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-purple-900/60 to-transparent"></div>
       </div>
 
-      {/* Navigation */}
-      <nav className="relative z-10 flex justify-between items-center px-8 py-6">
-        <Link href="/sports-events" className="text-white text-2xl font-bold font-pacifico cursor-pointer">
-          logo
-        </Link>
-        <div className="flex space-x-8">
-          <Link href="/sports-events" className="text-white hover:text-blue-200 transition-colors cursor-pointer">Home</Link>
-          <Link href="/sports-events#programs" className="text-white hover:text-blue-200 transition-colors cursor-pointer">Programs</Link>
-          <Link href="/sports-events/gallery" className="text-white hover:text-blue-200 transition-colors cursor-pointer">Gallery</Link>
-          <Link href="/sports-events#contact" className="text-white hover:text-blue-200 transition-colors cursor-pointer">Contact</Link>
-        </div>
-      </nav>
+      
 
       {/* Hero Content */}
       <div className="relative z-10 flex items-center justify-center h-full">

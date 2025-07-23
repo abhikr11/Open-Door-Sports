@@ -48,7 +48,7 @@ export default function ProgramsSection() {
   ];
 
   return (
-    <div id="curriculum" className="w-[98%] mx-auto -mt-40 p-1 pb-0 border-2 border-white bg-blue-300/30  rounded-t-xl">
+    <div id="allProgram" className="w-[98%] mx-auto -mt-40 p-1 pb-0 border-2 border-white bg-blue-300/30  rounded-t-xl">
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           {/* Section Header */}
@@ -135,8 +135,8 @@ export default function ProgramsSection() {
             </div>
 
             <div className="mt-12 text-center">
-              <button className="bg-gradient-to-r from-orange-500 to-pink-500 text-white px-8 py-4 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 whitespace-nowrap cursor-pointer">
-                Find the Right Program for Your Child
+              <button className="bg-gradient-to-r from-orange-500 to-pink-500 text-white  px-8 py-4 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 whitespace-nowrap cursor-pointer">
+                Find the Right Program 
               </button>
             </div>
           </div>

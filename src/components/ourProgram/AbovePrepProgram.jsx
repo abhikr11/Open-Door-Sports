@@ -48,22 +48,8 @@ export default function AbovePrepProgram() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
-      <nav className="bg-white shadow-sm border-b">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/sports-events" className="text-blue-600 hover:text-blue-800 transition-colors cursor-pointer">
-              ← Back to Programs
-            </Link>
-            <div className="text-2xl font-bold text-gray-900" style={{fontFamily: "Pacifico, serif"}}>
-              logo
-            </div>
-          </div>
-        </div>
-      </nav>
-
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-purple-400 via-violet-400 to-indigo-400 py-24">
+      <section className="relative bg-gradient-to-br from-purple-400 via-violet-400 to-indigo-400 py-30 min-h-screen">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>

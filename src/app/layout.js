@@ -1,8 +1,7 @@
 import './globals.css';
 import { Geist, Geist_Mono, Gwendolyn } from 'next/font/google';
 
-// import Navbar from '@/component/navbar/Navbar';
-// import Footer from '@/component/Footer/Footer';
+
 
 // Load fonts with variables
 const geistSans = Geist({
@@ -37,9 +36,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${gwendolyn.variable}`}>
       <body className="antialiased">
-        {/* <Navbar /> */}
+   
         {children}
-        {/* <Footer /> */}
+       
       </body>
     </html>
   );

@@ -1,11 +1,11 @@
 
 'use client';
 
-import Link from 'next/link';
+
 
 export default function BirthdayHero() {
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-purple-100 to-pink-100 flex items-center">
+    <div className="relative min-h-screen bg-gradient-to-br from-purple-100 to-pink-100 flex items-center py-25">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{

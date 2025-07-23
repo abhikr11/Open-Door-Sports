@@ -15,14 +15,14 @@ export const AboutUs = () => {
             build confidence and a love for being active`;
 
   return (
-    <section className="-mt-[50px]">
-      <img src="./image.png" alt="Decorative background" className="w-full" />
+    <section className="-mt-[40px] z-1">
+      <img src="./image5.png" alt="Decorative background" className="w-full" />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-10 lg:px-16 py-15 pb-50 bg-[#00CBB8] -mt-2">
+      <div className=" grid grid-cols-1 md:grid-cols-2 gap-10 px-10 lg:px-16 py-15 pb-50 bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 -mt-2">
         {/* Left Content */}
         <SlideInView direction="left">
           <div className="relative z-10">
-            <div className="relative inline-block mb-6">
+            <div className="relative inline-block mb-6">  
               {/* Remix Icon replacing FaCircle */}
               <i className="ri-circle-fill absolute lg:top-2 -left-4 text-[#33EFA0] z-0 text-4xl lg:text-5xl"></i>
               <TextHeading text_1="About Us" className="relative z-10" />
@@ -36,7 +36,7 @@ export const AboutUs = () => {
               {discription}
             </p>
             <a
-              href="/aboutUs"
+              href="/about"
               className="underline cursor-pointer text-[#696984]"
             >
               Learn more

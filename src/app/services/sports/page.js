@@ -5,16 +5,16 @@ import SportsHero from "../../../components/sportsEvents/SportsHero";
 import EventServices from "../../../components/sportsEvents/EventServices";
 import EventPreparation from "../../../components/sportsEvents/EventPreparation";
 import EventTypes from "../../../components/sportsEvents/EventTypes";
-import CallToAction from "../../../components/home/CallToAction";
+import EventContact from "../../../components/sportsEvents/EventContact";
 
 const Sports = () => {
   return (
     <>
-      <SportsHero /> 
+      <SportsHero/> 
       <EventServices />
       <EventPreparation />
       <EventTypes />
-      <CallToAction />
+      <EventContact/>
     </>
   );
 };

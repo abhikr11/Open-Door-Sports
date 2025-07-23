@@ -25,7 +25,7 @@ export const ServiceMenu = () => {
         <NavLink to="/services/birthdayEvents" text="Birthday Events" className={linkBorder}/>
         <NavLink to="/services/parentToddler" text="Parent-Toddler" className={linkBorder}/>
         <NavLink to="/services/intergratedProgram" text="Integrated Program" className={linkBorder}/>
-        <NavLink to="/#curriculum" text="Our Programs" className={linkBorder}/>
+        <NavLink to="/#allProgram" text="Our Programs" className={linkBorder}/>
 
         </motion.div>
     )

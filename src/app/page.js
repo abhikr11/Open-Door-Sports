@@ -7,6 +7,7 @@ import ServicesSection from "../components/home/ServicesSection";
 import WhyChooseUs from "../components/home/WhyChooseUs";
 import TestimonialsSection from "../components/home/TestimonialsSection";
 import CallToAction from "../components/home/CallToAction";
+import Footer from "../components/footer/Footer";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
       <WhyChooseUs/>
       <TestimonialsSection/>
       <CallToAction/>
-
+      <Footer/>
     </>
   );
 }

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function SportsHero() {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-blue-500 via-sky-500 to-indigo-600 flex items-center">
+    <section className="relative min-h-screen bg-gradient-to-br from-blue-500 via-sky-500 to-indigo-600 flex items-center py-25">
       <div className="absolute inset-0 bg-black/30"></div>
 
       {/* Animated Background Elements */}
