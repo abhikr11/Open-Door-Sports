@@ -2,6 +2,7 @@
 'use client';
 
 import Link from 'next/link';
+import FadeInOnView from '../animation/FadeInOnView';
 
 export default function ProgramsSection() {
   const programs = [
@@ -67,53 +68,56 @@ export default function ProgramsSection() {
           {/* Programs Grid */}
           <div className="grid lg:grid-cols-2 gap-8 mb-16">
             {programs.map((program, index) => (
-              <div key={index} className="group relative">
-                <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
-                  {/* Program Header */}
-                  <div className="flex items-center mb-6">
-                    <div className={`w-16 h-16 bg-gradient-to-br ${program.color} rounded-2xl flex items-center justify-center text-2xl mr-4 group-hover:scale-110 transition-transform duration-300`}>
-                      {program.icon}
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold text-gray-900">{program.title}</h3>
-                      <div className={`inline-block bg-gradient-to-r ${program.color} text-white px-4 py-1 rounded-full text-sm font-semibold mt-1`}>
-                        {program.age}
+              <FadeInOnView key={index} delay={index*0.2}>
+                <div key={index} className="group relative">
+                  <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
+                    {/* Program Header */}
+                    <div className="flex items-center mb-6">
+                      <div className={`w-16 h-16 bg-gradient-to-br ${program.color} rounded-2xl flex items-center justify-center text-2xl mr-4 group-hover:scale-110 transition-transform duration-300`}>
+                        {program.icon}
+                      </div>
+                      <div>
+                        <h3 className="text-2xl font-bold text-gray-900">{program.title}</h3>
+                        <div className={`inline-block bg-gradient-to-r ${program.color} text-white px-4 py-1 rounded-full text-sm font-semibold mt-1`}>
+                          {program.age}
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  {/* Program Image */}
-                  <div className="relative mb-6 overflow-hidden rounded-2xl">
-                    <img
-                      src={program.image}
-                      alt={program.title}
-                      className="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-
-                  {/* Program Description */}
-                  <div className="space-y-4">
-                    <p className="text-gray-700 leading-relaxed">{program.description}</p>
-
-                    <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-4 border-l-4 border-gradient-to-b from-blue-400 to-purple-400">
-                      <h4 className="font-bold text-gray-900 mb-2">Program Focus:</h4>
-                      <p className="text-gray-700 text-sm">{program.focus}</p>
+                    {/* Program Image */}
+                    <div className="relative mb-6 overflow-hidden rounded-2xl">
+                      <img
+                        src={program.image}
+                        alt={program.title}
+                        className="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
-                  </div>
 
-                  {/* CTA Button */}
-                  <Link href={program.link}>
-                    <button className={`w-full bg-gradient-to-r ${program.color} text-white py-4 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 whitespace-nowrap cursor-pointer mt-6`}>
-                      Learn More About This Program
-                    </button>
-                  </Link>
-                </div>
-              </div>
+                    {/* Program Description */}
+                    <div className="space-y-4">
+                      <p className="text-gray-700 leading-relaxed">{program.description}</p>
+
+                      <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-4 border-l-4 border-gradient-to-b from-blue-400 to-purple-400">
+                        <h4 className="font-bold text-gray-900 mb-2">Program Focus:</h4>
+                        <p className="text-gray-700 text-sm">{program.focus}</p>
+                      </div>
+                    </div>
+
+                    {/* CTA Button */}
+                    <Link href={program.link}>
+                      <button className={`w-full bg-gradient-to-r ${program.color} text-white py-4 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 whitespace-nowrap cursor-pointer mt-6`}>
+                        Learn More About This Program
+                      </button>
+                    </Link>
+                  </div>
+                </div> 
+              </FadeInOnView>
             ))}
           </div>
 
           {/* Age Timeline */}
+          <FadeInOnView delay={0.6}>
           <div className="bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 rounded-3xl p-12 text-white">
             <div className="text-center mb-12">
               <h3 className="text-3xl font-bold mb-4">Development Timeline</h3>
@@ -139,7 +143,8 @@ export default function ProgramsSection() {
                 Find the Right Program 
               </button>
             </div>
-          </div>
+          </div> 
+          </FadeInOnView>
         </div>
       </section>
     </div>

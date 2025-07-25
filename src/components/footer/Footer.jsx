@@ -2,18 +2,18 @@
 
 export default function Footer() {
   const quickLinks = [
-    { name: 'About Program', href: '#' },
-    { name: 'Key Elements', href: '#' },
-    { name: 'Enrollment', href: '#' },
-    { name: 'Success Stories', href: '#' },
-    { name: 'Contact', href: '#' }
+    { name: 'About Program', href: '/about' },
+    { name: 'Key Elements', href: '/#allProgram' },
+    { name: 'Success Stories', href: '/#TestimonialsSection' },
+    { name: 'careers', href: '/careers' },
+    { name: 'Contact', href: '/#callToAction' }
   ];
 
   const programs = [
-    { name: 'Mental Wellness', href: '#' },
-    { name: 'Physical Health', href: '#' },
-    { name: 'Nutrition Education', href: '#' },
-    { name: 'Academic Support', href: '#' },
+    { name: 'Mental Wellness', href: '/services/intergratedProgram' },
+    { name: 'School Sports', href: '/services/sports' },
+    { name: 'Birthday Adventures', href: '/services/birthdayEvents' },
+    { name: 'Academic Support', href: '/services/parentToddler' },
     { name: 'Special Needs', href: '#' }
   ];
 
@@ -22,7 +22,7 @@ export default function Footer() {
     { name: 'Student Portal', href: '#' },
     { name: 'Program Calendar', href: '#' },
     { name: 'News & Updates', href: '#' },
-    { name: 'FAQ', href: '#' }
+    { name: 'Gallery', href: '/gallery' }
   ];
 
   return (

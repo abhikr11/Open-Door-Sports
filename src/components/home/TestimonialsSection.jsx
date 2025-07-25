@@ -29,7 +29,7 @@ export default function TestimonialsSection() {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-br from-gray-50 to-white">
+    <section id="TestimonialsSection" className="py-24 bg-gradient-to-br from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-20">
