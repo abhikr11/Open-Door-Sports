@@ -1,6 +1,6 @@
 'use client';
 
-import { NavLink } from "./Navbar";
+import { NavLink } from "./Navbar2";
 import { motion } from "framer-motion";
 
 

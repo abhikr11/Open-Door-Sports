@@ -5,26 +5,24 @@ import { SchoolName } from './SchoolName';
 import { IconsBox } from './IconsBox';
 import { JoinUsBtn } from './JoinUsBtn';
 import { AnimatePresence, motion } from "framer-motion";
+
 import { ServiceMenu } from "./serviceMenu";
 
-export const Navbar = () => {
+export const Navbar2 = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleDropdown = () => setIsOpen(prev => !prev);
+  const toggleDropdown = () => {
+    setIsOpen(prev => !prev);
+  };
 
   return (
-    <div className="fixed top-0 z-50 w-full py-3 px-6 lg:px-10 flex items-center justify-between 
-                    bg-gradient-to-r from-white via-green-100/10 to-green-300/10 
-                    backdrop-blur-md shadow-md border-b border-green-200/40">
-      {/* Left: School Logo or Name */}
+    <div className="fixed top-0 z-50 w-full py-2 px-4 lg:pr-10 flex items-center justify-between bg-white/70 shadow-md">
       <SchoolName />
 
-      {/* Center: Navigation */}
-      <div className="hidden md:flex gap-6 h-[65px] items-center relative">
+      <div className="hidden md:flex gap-4 h-[65px] items-center relative">
         <NavLink to="/#" text="Home" />
         <NavLink to="/about" text="About Us" />
-
-        {/* Services Dropdown */}
+        {/* Services with Dropdown */}
         <div className="relative">
           <button onClick={toggleDropdown}>
             <NavLink to="#" text="Services" />
@@ -36,40 +34,39 @@ export const Navbar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.3 }}
-                className="absolute top-12 left-0 w-56 bg-white/80 text-gray-800 border border-gray-200 
-                  rounded-lg shadow-lg p-4 backdrop-blur-md z-50"
+                className="absolute top-10 -left-40 bg-[#7B7EEE]/20 p-2 border-2 border-white rounded-md shadow-lg z-50"
               >
                 <ServiceMenu />
               </motion.div>
             )}
           </AnimatePresence>
         </div>
-
         <NavLink to="/gallery" text="Gallery" />
         <NavLink to="/careers" text="Careers" />
       </div>
 
-      {/* Right: Join Us + Icons */}
+      {/* Right Side: CTA + Icons */}
       <div className="hidden lg:block">
         <JoinUsBtn />
       </div>
 
-      <div className="items-center gap-2 flex md:hidden">
+      <div className="items-center gap-2">
         <IconsBox />
       </div>
+
     </div>
   );
 };
 
-// NavLink Component
+
 export const NavLink = ({ to, text, className = '' }) => {
   return (
     <Link
       href={to}
-      className={`relative inline-block text-gray-800 font-medium text-[20px] px-3 py-2 
-        hover:text-indigo-600 transition duration-300 ease-in-out 
-        after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 
-        after:bg-indigo-500 after:transition-all after:duration-300 hover:after:w-full ${className}`}
+      className={`relative inline-block text-nav-text font-medium text-[18px] h-12 px-4 py-3 transition duration-200 
+        after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-0 
+        after:bg-gradient-to-r after:from-[#3b82f6] after:via-[#3730a3] after:to-[#1e3a8a]
+        after:transition-all after:duration-500 hover:after:w-full ${className}`}
     >
       {text}
     </Link>
