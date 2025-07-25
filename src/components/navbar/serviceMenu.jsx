@@ -18,7 +18,7 @@ export const ServiceMenu = () => {
                 damping: 15,
                 mass: 0.5,
             }} 
-            className="grid grid-cols-2 gap-2 w-[400px] h-[250px] bg-white border border-white rounded-sm shadow-md p-2"
+            className="grid grid-cols-2 gap-2 w-[420px] h-[250px] bg-white border border-white rounded-sm shadow-md p-2"
         > 
     
         <NavLink to="/services/sports" text="Sports"  className={linkBorder}/>
