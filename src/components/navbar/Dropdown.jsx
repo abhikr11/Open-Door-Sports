@@ -1,10 +1,10 @@
 'use client';
 
-import { NavLink } from "./Navbar2";
+import { NavLink } from "./Navbar";
 import { motion } from "framer-motion";
 
 export const Dropdown = ({ onClose }) => {
-  const linkBorder = "border-b border-blue w-full";
+  
 
   return (
     <motion.div
@@ -17,7 +17,7 @@ export const Dropdown = ({ onClose }) => {
         damping: 15,
         mass: 0.5,
       }}
-      className="flex flex-col gap-2 w-[250px] h-screen overflow-scroll bg-white border border-white rounded-sm shadow-md p-3 pb-15"
+      className="grid grid-cols-1 w-[200px] max-h-[470px]  bg-white border border-white rounded-sm shadow-md p-2 pb-15"
     >
       {/* Remix close icon */}
       <i
@@ -25,15 +25,15 @@ export const Dropdown = ({ onClose }) => {
         onClick={onClose}
       ></i>
 
-      <NavLink to="/" text="Home" className={linkBorder} />
-      <NavLink to="/about" text="About Us" className={linkBorder} />
-      <NavLink to="/services/sports" text="Sports" className={linkBorder} />
-      <NavLink to="/gallery" text="Gallery" className={linkBorder} />
-      <NavLink to="/careers" text="Careers" className={linkBorder} />
-      <NavLink to="/#allProgram" text="Our Programs" className={linkBorder} />
-      <NavLink to="/services/parentToddler" text="Parent-Toddler" className={linkBorder} />
-      <NavLink to="/services/intergratedProgram" text="Integrated Program" className={linkBorder} />
-      <NavLink to="/services/birthdayEvents" text="Birthday Events" className={linkBorder} />
+      <NavLink to="/" text="Home"  />
+      <NavLink to="/about" text="About Us"  />
+      <NavLink to="/services/sports" text="Sports" onClick={onClose} />
+      <NavLink to="/gallery" text="Gallery"  onClick={onClose}/>
+      <NavLink to="/careers" text="Careers" onClick={onClose} />
+      <NavLink to="/#allProgram" text="Our Programs" onClick={onClose} />
+      <NavLink to="/services/parentToddler" text="Parent-Toddler"  onClick={onClose}/>
+      <NavLink to="/services/intergratedProgram" text="Integrated Program"  onClick={onClose}/>
+      <NavLink to="/services/birthdayEvents" text="Birthday Events" onClick={onClose} />
     </motion.div>
   );
 };
