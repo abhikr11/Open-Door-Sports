@@ -16,12 +16,12 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <HeroSection2 />
-      <ProgramsSection />
-      {/* <ServicesSection /> */}
-      <WhyChooseUs />
-      <TestimonialsSection />
-      <CallToAction />
+      <FadeInOnView delay={0.1}><HeroSection2 /></FadeInOnView>
+      <FadeInOnView delay={0.2}><ProgramsSection /></FadeInOnView>
+      <FadeInOnView delay={0.3}><ServicesSection /></FadeInOnView>
+      <FadeInOnView delay={0.4}><WhyChooseUs /></FadeInOnView>
+      <FadeInOnView delay={0.5}><TestimonialsSection /></FadeInOnView>
+      <FadeInOnView delay={0.6}><CallToAction /></FadeInOnView>   
       <Footer />
     </>
   );

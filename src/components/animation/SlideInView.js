@@ -20,15 +20,17 @@ const SlideInView = ({
   const initial = directionMap[direction] || { x: 0, y: 0 };
 
   return (
-    <motion.div
-      initial={{ ...initial, opacity: 0 }}
-      whileInView={{ x: 0, y: 0, opacity: 1 }}
-      transition={{ duration, delay, ease: 'easeOut' }}
-      viewport={{ once: true }}
-      className={className}
-    >
-      {children}
-    </motion.div>
+    <div className={`relative overflow-hidden ${className}`}>
+      <motion.div
+        initial={{ ...initial, opacity: 0, position: 'absolute' }}
+        whileInView={{ x: 0, y: 0, opacity: 1, position: 'relative' }}
+        transition={{ duration, delay, ease: 'easeOut' }}
+        viewport={{ once: true }}
+        className="w-full"
+      >
+        {children}
+      </motion.div>
+    </div>
   );
 };
 
