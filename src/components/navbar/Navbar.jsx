@@ -42,8 +42,8 @@ const ServiceMenu = ({ onClose }) => {
         stiffness: 120,
         damping: 15,
         mass: 0.5,
-      }}
-      className="min-w-[200px] min-h-[260px] max-h-[260px] bg-white border border-white rounded-sm shadow-md p-2 space-y-1"
+      }}  
+      className="min-w-[230px] min-h-[260px] max-h-[260px] bg-white border border-white rounded-sm shadow-md p-2 space-y-1"
     >
       <NavLink to="/services/sports" text="Sports" onClick={onClose} />
       <NavLink to="/services/birthdayEvents" text="Birthday Events" onClick={onClose} />
@@ -89,7 +89,7 @@ export const Navbar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.3 }}
-                className="absolute top-12 left-0 w-60 bg-white/80 text-gray-800 border border-gray-200 
+                className="absolute top-12 left-0 w-fit bg-white/80 text-gray-800 border border-gray-200 
                   rounded-lg shadow-lg p-3 backdrop-blur-md z-50"
               >
                 <ServiceMenu onClose={closeDropdown} />
