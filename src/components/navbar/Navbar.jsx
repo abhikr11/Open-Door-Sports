@@ -43,7 +43,7 @@ const ServiceMenu = ({ onClose }) => {
         damping: 15,
         mass: 0.5,
       }}
-      className="min-w-[200px] h-[260px] bg-white border border-white rounded-sm shadow-md p-2 space-y-1"
+      className="min-w-[200px] min-h-[260px] max-h-[260px] bg-white border border-white rounded-sm shadow-md p-2 space-y-1"
     >
       <NavLink to="/services/sports" text="Sports" onClick={onClose} />
       <NavLink to="/services/birthdayEvents" text="Birthday Events" onClick={onClose} />
