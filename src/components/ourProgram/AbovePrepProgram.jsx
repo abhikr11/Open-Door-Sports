@@ -48,6 +48,7 @@ export default function AbovePrepProgram() {
 
   return (
     <div className="min-h-screen bg-white">
+      
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-purple-400 via-violet-400 to-indigo-400 py-30 min-h-screen">
         <div className="max-w-7xl mx-auto px-6">
