@@ -111,7 +111,7 @@ export const Navbar = () => {
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.3 }}
                 className="absolute top-12 left-0 w-fit bg-white/80 text-gray-800 border border-gray-200 
-                          rounded-lg shadow-lg p-3 backdrop-blur-md z-50"
+                          rounded-lg shadow-lg p-2 backdrop-blur-md z-50"
               >
                 <ServiceMenu onClose={closeDropdowns} />
               </motion.div>
