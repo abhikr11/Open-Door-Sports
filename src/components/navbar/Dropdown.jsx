@@ -17,7 +17,7 @@ export const Dropdown = ({ onClose }) => {
         damping: 15,
         mass: 0.5,
       }}
-      className="grid grid-cols-1 min-w-[210px] max-h-[480px] bg-white border border-white rounded-sm shadow-md p-2 pb-15"
+      className="grid grid-cols-1 min-w-[230px] max-h-[480px] bg-white border border-white rounded-sm shadow-md p-2 pb-15"
     >
       {/* Remix close icon */}
       <i
