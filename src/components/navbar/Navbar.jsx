@@ -43,13 +43,16 @@ const ServiceMenu = ({ onClose }) => {
         damping: 15,
         mass: 0.5,
       }}  
-      className="min-w-[230px] min-h-[260px] max-h-[260px] bg-white border border-white rounded-sm shadow-md p-2 space-y-1"
+      className="min-w-[230px] min-h-[260px]  bg-white border border-white rounded-sm shadow-md p-2 space-y-1"
     >
       <NavLink to="/services/sports" text="Sports" onClick={onClose} />
       <NavLink to="/services/birthdayEvents" text="Birthday Events" onClick={onClose} />
       <NavLink to="/services/parentToddler" text="Parent-Toddler" onClick={onClose} />
       <NavLink to="/services/intergratedProgram" text="Integrated Program" onClick={onClose} />
-      <NavLink to="/#allProgram" text="Our Programs" onClick={onClose} />
+      <NavLink to="/#allProgram" text="Toddlers Program" onClick={onClose} />
+      <NavLink to="/#allProgram" text="Preschoolers Program" onClick={onClose} />
+      <NavLink to="/#allProgram" text="Prep Level" onClick={onClose} />
+      <NavLink to="/#allProgram" text="Above Prep Level" onClick={onClose} />
     </motion.div>
   );
 };
@@ -72,7 +75,7 @@ export const Navbar = () => {
       {/* Center: Navigation Links */}
       <div className="hidden md:flex gap-5 h-[65px] items-center relative">
         <NavLink to="/#" text="Home" onClick={closeDropdown} />
-
+        <NavLink to="/about" text="About Us" onClick={closeDropdown} />
         {/* Dropdown */}
         <div className="relative">
           <button
@@ -99,7 +102,6 @@ export const Navbar = () => {
         </div>
 
         {/* Other links */}
-        <NavLink to="/about" text="About Us" onClick={closeDropdown} />
         <NavLink to="/gallery" text="Gallery" onClick={closeDropdown} />
         <NavLink to="/careers" text="Careers" onClick={closeDropdown} />
       </div>
