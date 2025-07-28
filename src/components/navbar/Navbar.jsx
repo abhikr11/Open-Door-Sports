@@ -43,12 +43,12 @@ const ServiceMenu = ({ onClose }) => {
         damping: 15,
         mass: 0.5,
       }}  
-      className="min-w-54 min-h-60  bg-white border border-white rounded-sm shadow-md p-1 space-y-1"
+      className="min-w-50 min-h-60  bg-white border border-white rounded-sm shadow-md p-1 space-y-1"
     >
       <NavLink to="/services/sports" text="Sports" onClick={onClose} />
       <NavLink to="/services/birthdayEvents" text="Birthday Events" onClick={onClose} />
       <NavLink to="/services/parentToddler" text="Parent-Toddler" onClick={onClose} />
-      <NavLink to="/services/intergratedProgram" text="Integrated Program" onClick={onClose} />
+      <NavLink to="/services/intergratedProgram" text="Mental Wellness" onClick={onClose} />
       <NavLink to="/#allProgram" text="Our Programs" onClick={onClose} />
     </motion.div>
   );
