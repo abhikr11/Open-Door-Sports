@@ -51,10 +51,10 @@ const ProgramMenu = ({ onClose }) => (
     animate={{ opacity: 1, y: 0 }}
     exit={{ opacity: 0, y: -20 }}
     transition={{ type: "spring", stiffness: 120, damping: 15, mass: 0.5 }}
-    className="min-w-50 min-h-60 bg-white border border-white rounded-sm shadow-md p-1 space-y-1"
+    className="min-w-45 max-w-45 min-h-60 bg-white border border-white rounded-sm shadow-md p-1 space-y-1"
   >
-    <NavLink to="/program/toddlersProgram" text="Toddlers Program" onClick={onClose} />
-    <NavLink to="/program/PreschoolersProgram" text="Preschoolers Program" onClick={onClose} />
+    <NavLink to="/program/toddlersProgram" text="Toddlers" onClick={onClose} />
+    <NavLink to="/program/PreschoolersProgram" text="Preschoolers " onClick={onClose} />
     <NavLink to="/program/preLevelProgram" text="Prep Level" onClick={onClose} />
     <NavLink to="/program/abovePrepProgram" text="Above Prep Level" onClick={onClose} />
     <NavLink to="/#allProgram" text="Our Programs" onClick={onClose} />
