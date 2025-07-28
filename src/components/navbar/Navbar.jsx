@@ -35,7 +35,7 @@ const ServiceMenu = ({ onClose }) => (
     animate={{ opacity: 1, y: 0 }}
     exit={{ opacity: 0, y: -20 }}
     transition={{ type: "spring", stiffness: 120, damping: 15, mass: 0.5 }}
-    className="min-w-50 min-h-60 bg-white border border-white rounded-sm shadow-md p-1 space-y-1"
+    className="min-w-45 min-h-60 bg-white border border-white rounded-sm shadow-md p-1 space-y-1"
   >
     <NavLink to="/services/sports" text="Sports" onClick={onClose} />
     <NavLink to="/services/birthdayEvents" text="Birthday Events" onClick={onClose} />
@@ -136,7 +136,7 @@ export const Navbar = () => {
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.3 }}
                 className="absolute top-12 left-0 w-fit bg-white/80 text-gray-800 border border-gray-200 
-                          rounded-lg shadow-lg p-3 backdrop-blur-md z-50"
+                          rounded-lg shadow-lg p-2 backdrop-blur-md z-50"
               >
                 <ProgramMenu onClose={closeDropdowns} />
               </motion.div>

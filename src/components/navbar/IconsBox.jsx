@@ -31,8 +31,8 @@ export const IconsBox = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 0.3 }}
-              className="absolute -right-6 -top-3 bg-white/80 p-2 border-2 rounded-sm border-white"
+              transition={{ duration: 0.8 }}
+              className="absolute -right-6 -top-3 rounded-sm"
             >
               <Dropdown onClose={() => setIsOpen(false)} />
             </motion.div>
