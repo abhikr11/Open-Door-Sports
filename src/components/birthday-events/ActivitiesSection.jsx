@@ -71,9 +71,9 @@ export default function ActivitiesSection() {
                   </span>
                 </div>
                 <p className="text-gray-600 mb-4">{activity.description}</p>
-                <button className="text-purple-600 hover:text-purple-700 font-semibold cursor-pointer">
+                {/* <button className="text-purple-600 hover:text-purple-700 font-semibold cursor-pointer">
                   Learn More →
-                </button>
+                </button> */}
               </div>
             </div>
           ))}

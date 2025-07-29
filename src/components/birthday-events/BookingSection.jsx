@@ -3,6 +3,50 @@
 import { useState } from 'react';
 
 export default function BookingSection() {
+
+
+
+  const contactFields = [
+    {
+      icon: 'ri-phone-line',
+      label: 'Phone',
+      value: '+91 8981256825 or +91 9593382777',
+    },
+    {
+      icon: 'ri-mail-line',
+      label: 'Email',
+      value: 'birthdays@opendoorsports.com',
+    },
+    {
+      icon: 'ri-map-pin-line',
+      label: 'Location',
+      value: (
+        <>
+          24b/ 1a, Dr Suresh Sarkar Road, Near Entally<br />
+          POST OFFICE KOLKATA-700014
+        </>
+      ),
+    },
+    {
+      icon: 'ri-time-line',
+      label: 'Party Hours',
+      value: (
+        <>
+          Saturday & Sunday<br />
+          9:00 AM - 6:00 PM
+        </>
+      ),
+    },
+  ];
+
+  const quickTips = [
+    'Book at least 2 weeks in advance',
+    'Weekend slots fill up quickly',
+    'We provide all sports equipment',
+    'Cake and refreshments not included',
+    'Socks required for all participants',
+  ];
+
   const [formData, setFormData] = useState({
     parentName: '',
     childName: '',
@@ -217,59 +261,30 @@ export default function BookingSection() {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
 
               <div className="space-y-6">
-                <div className="flex items-start">
-                  <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
-                    <i className="ri-phone-line text-purple-600"></i>
+                {contactFields.map((field, index) => (
+                  <div key={index} className="flex items-start">
+                    <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                      <i className={`${field.icon} text-purple-600`}></i>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900">{field.label}</p>
+                      <p className="text-gray-600">{field.value}</p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="font-semibold text-gray-900">Phone</p>
-                    <p className="text-gray-600">(555) 123-4567</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
-                    <i className="ri-mail-line text-purple-600"></i>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-gray-900">Email</p>
-                    <p className="text-gray-600">birthdays@opendoorsports.com</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
-                    <i className="ri-map-pin-line text-purple-600"></i>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-gray-900">Location</p>
-                    <p className="text-gray-600">123 Sports Center Drive<br />Anytown, ST 12345</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
-                    <i className="ri-time-line text-purple-600"></i>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-gray-900">Party Hours</p>
-                    <p className="text-gray-600">Saturday & Sunday<br />9:00 AM - 6:00 PM</p>
-                  </div>
-                </div>
+                ))}
               </div>
 
               <div className="mt-8 pt-8 border-t border-purple-200">
                 <h4 className="font-semibold text-gray-900 mb-4">Quick Tips</h4>
                 <ul className="space-y-2 text-sm text-gray-600">
-                  <li>• Book at least 2 weeks in advance</li>
-                  <li>• Weekend slots fill up quickly</li>
-                  <li>• We provide all sports equipment</li>
-                  <li>• Cake and refreshments not included</li>
-                  <li>• Socks required for all participants</li>
+                  {quickTips.map((tip, index) => (
+                    <li key={index}>• {tip}</li>
+                  ))}
                 </ul>
               </div>
             </div>
-          </div>
+          </div> 
+
         </div>
       </div>
     </section>
