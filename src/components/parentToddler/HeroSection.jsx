@@ -3,7 +3,7 @@
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-purple-50 px-20 py-25">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-purple-50 md:px-20 py-25">
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{
