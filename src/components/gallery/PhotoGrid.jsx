@@ -11,8 +11,8 @@ export default function PhotoGrid({ activeFilter }) {
       src: 'https://readdy.ai/api/search-image?query=toddlers%20age%202-4%20years%20playing%20with%20colorful%20soft%20play%20equipment%2C%20foam%20blocks%2C%20and%20safe%20climbing%20structures%20in%20a%20bright%20indoor%20play%20area%2C%20happy%20children%20learning%20balance%20and%20coordination%20with%20caring%20instructors%2C%20soft%20pastel%20colors%2C%20safe%20environment&width=400&height=300&seq=toddler-1&orientation=landscape',
       alt: 'Toddlers Playing',
       category: 'toddlers',
-      title: 'Toddlers Playtime',
-      description: 'Little ones exploring movement and balance through fun activities',
+      title: '',
+      description: '',
       type: 'photo'
     },
     {
@@ -227,14 +227,12 @@ export default function PhotoGrid({ activeFilter }) {
 
               <div className="p-4">
                 <div className="flex items-center justify-between mb-2">
-                  <h3 className="font-semibold text-gray-900">{photo.title}</h3>
                   {photo.type === 'video' && (
                     <div className="w-5 h-5 flex items-center justify-center">
                       <i className="ri-video-line text-blue-600"></i>
                     </div>
                   )}
                 </div>
-                <p className="text-sm text-gray-600 line-clamp-2">{photo.description}</p>
               </div>
 
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
