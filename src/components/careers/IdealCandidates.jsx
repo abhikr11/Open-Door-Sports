@@ -35,11 +35,11 @@ export default function IdealCandidates() {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white ">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Who We're Looking For
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#1a237e] mb-6">
+            Who <span className="text-teal-500">We're Looking </span>For
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Ideal candidates should have the following qualities and experience to join our dynamic team

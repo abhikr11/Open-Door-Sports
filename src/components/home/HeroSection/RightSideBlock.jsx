@@ -3,24 +3,24 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 
-// Animation container with staggered child animations
+// Faster animation container
 const container = {
   hidden: {},
   show: {
     transition: {
-      staggerChildren: 1.2,
-      delayChildren: 1.2, // Optional: delay before first child animates
+      staggerChildren: 0.2,
+      delayChildren: 0.2,
     },
   },
 };
 
-// Item animation variant with increased duration
+// Reduced duration for individual box animations
 const item = {
-  hidden: { opacity: 0, y: -50 },
+  hidden: { opacity: 0, y: -30 },
   show: {
     opacity: 1,
     y: 0,
-    transition: { duration: 2.2, ease: 'easeOut' }, // ← increased from 0.5 to 0.8
+    transition: { duration: 0.6, ease: 'easeOut' },
   },
 };
 
@@ -37,7 +37,7 @@ export default function RightSideBlock() {
 
   return (
     <motion.div
-      className="grid grid-cols-3 gap-4 w-full md:w-1/2 min-w-[300px] mt-10 md:mt-0 ml-0 "
+      className="grid grid-cols-3 gap-4 w-full md:w-1/2 min-w-[300px] mt-10 md:mt-0 ml-0"
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}

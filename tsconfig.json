@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/app/not-found.js", "src/components/sportsEvents/EventContact.jsx"  ],
+, "src/app/not-found.js", "src/components/sportsEvents/EventContact.jsx", "src/components/parentToddler/TestimonialsSection.jsx", "src/components/parentToddler/BenefitsSection.jsx", "src/components/parentToddler/CTASection.jsx", "src/components/parentToddler/Footer.jsx", "src/components/parentToddler/Header.jsx", "src/components/parentToddler/HeroSection.jsx", "src/components/parentToddler/ProgramDetailsSection.jsx", "src/components/parentToddler/ProgramOverview.jsx", "src/app/services/parentToddler/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]
