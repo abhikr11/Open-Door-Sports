@@ -23,11 +23,11 @@ export default function HeroSection2() {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-5xl lg:text-7xl font-bold mb-6 leading-tight"
+          className="text-5xl lg:text-7xl font-bold mb-6 leading-tight mt-20"
         >
           Welcome to
           <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-orange-300 to-pink-300">
-            Open Door School
+            Open Door Sports
           </span>
         </motion.h1>
 
@@ -48,16 +48,16 @@ export default function HeroSection2() {
         >
           <Link
             href="/enrollment"
-            className="bg-gradient-to-r from-orange-400 to-pink-500 hover:from-orange-500 hover:to-pink-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+            className="max-w-40 bg-gradient-to-r from-orange-400 to-pink-500 hover:from-orange-500 hover:to-pink-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
-            Join Our Family
+            Enroll Now
           </Link>
-          <Link
+          {/* <Link
             href="/virtual-tour"
             className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300"
           >
             Take a Virtual Tour
-          </Link>
+          </Link> */}
         </motion.div>
       </div>
 

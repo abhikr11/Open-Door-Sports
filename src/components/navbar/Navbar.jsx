@@ -40,7 +40,7 @@ const ServiceMenu = ({ onClose }) => (
     <NavLink to="/services/sports" text="Sports" onClick={onClose} />
     <NavLink to="/services/birthdayEvents" text="Birthday Events" onClick={onClose} />
     <NavLink to="/services/parentToddler" text="Parent-Toddler" onClick={onClose} />
-    <NavLink to="/services/intergratedProgram" text="Mental Wellness" onClick={onClose} />
+    <NavLink to="/services/afterSchool" text="After School" onClick={onClose} />
     <NavLink to="/#allProgram" text="Our Programs" onClick={onClose} />
   </motion.div>
 );
@@ -57,12 +57,17 @@ const ProgramMenu = ({ onClose }) => (
     <NavLink to="/program/PreschoolersProgram" text="Preschoolers " onClick={onClose} />
     <NavLink to="/program/preLevelProgram" text="Prep Level" onClick={onClose} />
     <NavLink to="/program/abovePrepProgram" text="Above Prep Level" onClick={onClose} />
-    <NavLink to="/#allProgram" text="Our Programs" onClick={onClose} />
+    <NavLink to="/services/intergratedProgram" text="Integrated" onClick={onClose} />
   </motion.div>
 );
 
 // ------------------- Navbar Component -------------------
 export const Navbar = () => {
+  
+  const btnAnimation = `hover:text-[#17246D] transition duration-300 ease-in-out 
+                        after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 
+                        after:bg-[#17246D] after:transition-all after:duration-300 hover:after:w-full`
+
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isProgramsOpen, setIsProgramsOpen] = useState(false);
 
@@ -87,6 +92,7 @@ export const Navbar = () => {
                     backdrop-blur-md shadow-md border-b border-green-200/40">
 
       {/* Left: School Name or Logo */}
+      
       <SchoolName />
 
       {/* Center: Navigation Links */}
@@ -98,8 +104,8 @@ export const Navbar = () => {
         <div className="relative">
           <button
             onClick={toggleServices}
-            className="relative inline-block text-[#0408C3] font-medium text-[18px] px-3 py-2 cursor-pointer
-                      hover:text-[#17246D] transition duration-300 ease-in-out"
+            className={`relative inline-block text-[#0408C3] font-medium text-[18px] px-3 py-2 cursor-pointer
+                      hover:text-[#17246D] transition duration-300 ease-in-out ${btnAnimation}`}
           >
             Services
           </button>
@@ -123,8 +129,8 @@ export const Navbar = () => {
         <div className="relative">
           <button
             onClick={togglePrograms}
-            className="relative inline-block text-[#0408C3] font-medium text-[18px] px-3 py-2 cursor-pointer
-                      hover:text-[#17246D] transition duration-300 ease-in-out"
+            className={`relative inline-block text-[#0408C3] font-medium text-[18px] px-3 py-2 cursor-pointer
+                      hover:text-[#17246D] transition duration-300 ease-in-out ${btnAnimation}`}
           >
             Programs
           </button>

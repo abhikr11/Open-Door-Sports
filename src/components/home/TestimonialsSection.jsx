@@ -29,7 +29,7 @@ export default function TestimonialsSection() {
   ];
 
   return (
-    <section id="TestimonialsSection" className="py-24 bg-gradient-to-br from-gray-50 to-white">
+    <section id="TestimonialsSection" className="py-20 bg-gradient-to-br from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-20">
@@ -92,7 +92,7 @@ export default function TestimonialsSection() {
         </div>
 
         {/* Call to Action */}
-        <div className="mt-20 text-center">
+        {/*<div className="mt-20 text-center">
           <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl p-12 text-white">
             <h3 className="text-3xl font-bold mb-4">Ready to Create Your Success Story?</h3>
             <p className="text-xl mb-8 text-indigo-100">
@@ -103,8 +103,8 @@ export default function TestimonialsSection() {
               Book Your Event Now
             </button>
           </div>
-        </div>
-      </div>
+        </div>*/}
+      </div>  
     </section>
   );
 }

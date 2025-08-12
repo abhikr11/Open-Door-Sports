@@ -67,9 +67,9 @@ export default function AbovePrepProgram() {
                 <button className="bg-white text-purple-600 px-8 py-4 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 whitespace-nowrap cursor-pointer">
                   Enroll Now
                 </button>
-                <button className="bg-white/10 backdrop-blur-sm text-white border-2 border-white/20 px-8 py-4 rounded-2xl font-bold hover:bg-white/20 transition-all duration-300 whitespace-nowrap cursor-pointer">
+                {/*<button className="bg-white/10 backdrop-blur-sm text-white border-2 border-white/20 px-8 py-4 rounded-2xl font-bold hover:bg-white/20 transition-all duration-300 whitespace-nowrap cursor-pointer">
                   Schedule a Visit
-                </button>
+                </button> */}
               </div>
             </div>
             <div className="relative">

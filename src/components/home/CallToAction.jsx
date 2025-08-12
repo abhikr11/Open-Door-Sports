@@ -20,12 +20,12 @@ export default function CallToAction() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <button className="bg-white text-blue-600 hover:bg-blue-50 px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg whitespace-nowrap cursor-pointer">
-              <i className="ri-user-add-line w-5 h-5 flex items-center justify-center mr-2 inline-flex"></i>
-              Enroll Now
+              <i className="ri-calendar-line w-5 h-5 flex items-center justify-center mr-2 inline-flex"></i>
+              Schedule a demo
             </button>
             <button className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 whitespace-nowrap cursor-pointer">
-              <i className="ri-calendar-line w-5 h-5 flex items-center justify-center mr-2 inline-flex"></i>
-              Schedule Visit
+              <i className="ri-user-add-line w-5 h-5 flex items-center justify-center mr-2 inline-flex"></i>
+              Enroll now
             </button>
             <button className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 whitespace-nowrap cursor-pointer">
               <i className="ri-download-line w-5 h-5 flex items-center justify-center mr-2 inline-flex"></i>

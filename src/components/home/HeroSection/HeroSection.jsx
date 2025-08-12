@@ -78,7 +78,7 @@ export default function HeroSection() {
             transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
             style={{ backgroundSize: '200% 200%' }}
           >
-            Open Door School
+            Open Door Sports
           </motion.h1>
         </motion.div>
 

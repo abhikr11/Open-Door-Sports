@@ -50,12 +50,12 @@ export default function ProgramsSection() {
 
   return (
     <div id="allProgram" className="w-[98%] mx-auto   p-1 pb-0 border-2 border-white bg-blue-300/30  rounded-t-xl">
-      <section className="py-24 bg-white">
+      <section className="py-15 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           {/* Section Header */}
           <div className="text-center mb-20">
-            <div className="inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-semibold mb-4">
-              Our Programs
+            <div className="inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-semibold mb-10">
+              Our School Program
             </div>
             <h2 className="text-5xl font-black text-gray-900 mb-6">
               Age-Specific <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">Development</span>
@@ -66,12 +66,12 @@ export default function ProgramsSection() {
           </div>
 
           {/* Programs Grid */}
-          <div className="grid lg:grid-cols-2 gap-8 mb-16">
+         {/* <div className="grid lg:grid-cols-2 gap-8 mb-16">
             {programs.map((program, index) => (
               <FadeInOnView key={index} delay={index * 0.2}>
                 <div key={index} className="group relative">
                   <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
-                    {/* Program Header */}
+                    // { Program Header }
                     <div className="flex items-center mb-6">
                       <div className={`w-16 h-16 bg-gradient-to-br ${program.color} rounded-2xl flex items-center justify-center text-2xl mr-4 group-hover:scale-110 transition-transform duration-300`}>
                         <img src={program.icon} width={32} height={32} className="object-contain" />
@@ -85,7 +85,7 @@ export default function ProgramsSection() {
                       </div>
                     </div>
 
-                    {/* Program Image */}
+                    //{ Program Image }
                     <div className="relative mb-6 overflow-hidden rounded-2xl">
                       <img
                         src={program.image}
@@ -95,7 +95,7 @@ export default function ProgramsSection() {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
 
-                    {/* Program Description */}
+                    {// Program Description }
                     <div className="space-y-4">
                       <p className="text-gray-700 leading-relaxed">{program.description}</p>
 
@@ -105,7 +105,7 @@ export default function ProgramsSection() {
                       </div>
                     </div>
 
-                    {/* CTA Button */}
+                    {// CTA Button }
                     <Link href={program.link}>
                       <button className={`w-full bg-gradient-to-r ${program.color} text-white py-4 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 whitespace-nowrap cursor-pointer mt-6`}>
                         Learn More About This Program
@@ -115,7 +115,7 @@ export default function ProgramsSection() {
                 </div>
               </FadeInOnView>
             ))}
-          </div>
+          </div> */}
 
           {/* Age Timeline */}
           <FadeInOnView delay={0.6}>
@@ -128,9 +128,9 @@ export default function ProgramsSection() {
               <div className="grid md:grid-cols-4 gap-8">
                 {programs.map((program, index) => (
                   <div key={index} className="text-center">
-                    <div className={`w-20 h-20 bg-gradient-to-br ${program.color} rounded-full flex items-center justify-center text-3xl mx-auto mb-4 hover:scale-110 transition-transform duration-300 cursor-pointer`}>
+                    <a href={program.link} className={`w-20 h-20 bg-gradient-to-br ${program.color} rounded-full flex items-center justify-center text-3xl mx-auto mb-4 hover:scale-110 transition-transform duration-300 cursor-pointer`}>
                       <img src={program.icon} width={40} className='image' />
-                    </div>
+                    </a>
                     <h4 className="font-bold text-lg mb-2">{program.title}</h4>
                     <div className="text-gray-300 text-sm bg-white/10 backdrop-blur-sm rounded-full px-3 py-1">
                       {program.age}

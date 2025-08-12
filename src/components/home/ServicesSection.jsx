@@ -6,13 +6,13 @@ import SlideInView from "../animation/SlideInView";
 export default function ServicesSection() {
   const services = [
     {
-      title: "After-School Programs",
+      title: "After-School Program",
       description: "Bringing fitness and fun to your doorstep with convenient classes in residential communities.",
       icon: "🏠",
       color: "from-purple-500 to-pink-500",
       features: ["8-10 children groups", "Motor skills development", "Social interaction", "Community building"],
       image: "https://readdy.ai/api/search-image?query=Children%20participating%20in%20after-school%20sports%20activities%20in%20a%20modern%20apartment%20complex%20courtyard%2C%20small%20group%20doing%20fun%20physical%20exercises%20with%20colorful%20equipment%2C%20friendly%20coach%20leading%20activities%2C%20safe%20residential%20environment%20with%20natural%20lighting&width=500&height=300&seq=after-school-modern&orientation=landscape",
-      link: "/services/intergratedProgram"
+      link: "/services/afterSchool"
     },
     {
       title: "School Sports Days",
@@ -66,14 +66,14 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-10 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-20">
-          <div className="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full text-sm font-semibold mb-4">
+        <div className="text-center mb-20 ">
+          <div className="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full text-sm font-semibold mb-10">
             Our Services
           </div>
-          <h2 className="text-5xl font-black text-gray-900 mb-6">
+          <h2 className="text-5xl font-black text-gray-900 mb-4">
             What We <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Offer</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -125,11 +125,11 @@ export default function ServicesSection() {
         </div>
 
         {/* After-School Program Highlight */}
-        <FadeInOnView delay={0.8}>
+        {/*<FadeInOnView delay={0.8}>
           <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-3xl p-12 text-white">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
 
-              {/* Text Content */}
+              // Text Content 
               <div>
                 <h3 className="text-4xl font-bold mb-6">After-School & Apartment Classes</h3>
                 <p className="text-xl mb-8 text-purple-100">
@@ -149,7 +149,7 @@ export default function ServicesSection() {
                 </div>
               </div>
 
-              {/* Image Section */}
+              // Image Section 
               <div className="relative">
                 <div className="bg-white/20 backdrop-blur-sm rounded-3xl p-8 border border-white/30">
                   <img
@@ -159,7 +159,7 @@ export default function ServicesSection() {
                   />
                 </div>
 
-                {/* Floating Stats */}
+                // Floating Stats 
                 <div className="absolute -top-4 -right-4 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl p-4 text-black font-bold text-center shadow-lg">
                   <div className="text-2xl">8-10</div>
                   <div className="text-xs">Kids/Group</div>
@@ -168,7 +168,7 @@ export default function ServicesSection() {
 
             </div>
           </div>
-        </FadeInOnView>
+        </FadeInOnView>*/}
 
       </div>
     </section>
