@@ -23,7 +23,7 @@ export default function HeroSection2() {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-5xl lg:text-7xl font-bold mb-6 leading-tight mt-20"
+          className="text-5xl lg:text-7xl font-bold mb-6 leading-tight "
         >
           Welcome to
           <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-orange-300 to-pink-300">
@@ -48,7 +48,7 @@ export default function HeroSection2() {
         >
           <Link
             href="/enrollment"
-            className="max-w-40 bg-gradient-to-r from-orange-400 to-pink-500 hover:from-orange-500 hover:to-pink-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+            className="w-fit bg-gradient-to-r from-orange-400 to-pink-500 hover:from-orange-500 hover:to-pink-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             Enroll Now
           </Link>
