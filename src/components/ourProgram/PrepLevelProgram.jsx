@@ -64,9 +64,9 @@ export default function PrepLevelProgram() {
                 At this stage, children are introduced to specific sports and co-curricular activities that challenge and refine their growing abilities. The focus is on applying their developing skills in more structured and competitive settings.
               </p>
               <div className="flex flex-wrap gap-4">
-                <button className="bg-white text-green-600 px-8 py-4 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 whitespace-nowrap cursor-pointer">
+                {/* <button className="bg-white text-green-600 px-8 py-4 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 whitespace-nowrap cursor-pointer">
                   Enroll Now
-                </button>
+                </button> */}
                 {/* <button className="bg-white/10 backdrop-blur-sm text-white border-2 border-white/20 px-8 py-4 rounded-2xl font-bold hover:bg-white/20 transition-all duration-300 whitespace-nowrap cursor-pointer">
                   Schedule a Visit
                 </button> */}
@@ -147,17 +147,17 @@ export default function PrepLevelProgram() {
       </section>
 
       {/* Schedule & Pricing */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
+      {/* <section className="py-24 bg-white"> */}
+        {/* <div className="max-w-7xl mx-auto px-6"> */}
+          {/* <div className="text-center mb-16">
             <h2 className="text-5xl font-black text-gray-900 mb-6">
               Schedule & <span className="bg-gradient-to-r from-green-500 to-emerald-500 bg-clip-text text-transparent">Pricing</span>
             </h2>
-          </div>
+          </div> */}
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          {/* <div className="grid lg:grid-cols-2 gap-12"> */}
             {/* Schedule */}
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-3xl p-8">
+            {/* <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-3xl p-8">
               <h3 className="text-3xl font-bold text-gray-900 mb-8">Class Schedule</h3>
               <div className="space-y-6">
                 <div className="flex justify-between items-center p-4 bg-white rounded-2xl">
@@ -181,10 +181,10 @@ export default function PrepLevelProgram() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* Pricing */}
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-8 text-white">
+            {/* <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-8 text-white">
               <h3 className="text-3xl font-bold mb-8">Pricing Options</h3>
               <div className="space-y-6">
                 <div className="p-6 bg-white/10 backdrop-blur-sm rounded-2xl">
@@ -206,13 +206,13 @@ export default function PrepLevelProgram() {
                   </ul>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            </div> */}
+          {/* </div> */}
+        {/* </div> */}
+      {/* </section> */}
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900">
+      {/* <section className="py-24 bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-5xl font-black text-white mb-6">
             Ready to Take Your Child's Skills to the Next Level?
@@ -229,7 +229,7 @@ export default function PrepLevelProgram() {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

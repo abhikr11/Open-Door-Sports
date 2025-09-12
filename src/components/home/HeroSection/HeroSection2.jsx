@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
@@ -46,12 +47,12 @@ export default function HeroSection2() {
           transition={{ duration: 1, delay: 0.6 }}
           className="flex flex-col sm:flex-row gap-4"
         >
-          <Link
+          {/* <Link
             href="/enrollment"
             className="w-fit bg-gradient-to-r from-orange-400 to-pink-500 hover:from-orange-500 hover:to-pink-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             Enroll Now
-          </Link>
+          </Link> */}
           {/* <Link
             href="/virtual-tour"
             className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300"

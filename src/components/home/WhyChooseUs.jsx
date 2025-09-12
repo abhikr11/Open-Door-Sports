@@ -76,7 +76,7 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Stats Section */}
-        <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-3xl p-12 text-white">
+        {/* <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-3xl p-12 text-white">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div className="group">
               <div className="text-5xl font-black mb-2 bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
@@ -106,7 +106,7 @@ export default function WhyChooseUs() {
               <div className="text-gray-300">Expert Staff</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

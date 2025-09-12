@@ -103,7 +103,7 @@ export default function EventTypes() {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        {/* <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-blue-600 to-sky-500 p-8 rounded-2xl text-white">
             <h3 className="text-3xl font-bold mb-4">
               Custom Event Solutions
@@ -116,7 +116,7 @@ export default function EventTypes() {
               Customize Your Event
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

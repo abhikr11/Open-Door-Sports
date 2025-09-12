@@ -65,9 +65,9 @@ export default function ToddlersProgram() {
                 This foundational stage is crucial for developing essential movement and locomotor skills. Our program is thoughtfully designed to nurture these abilities in a safe, engaging, and playful environment.
               </p>
               <div className="flex flex-wrap gap-4">
-                <button className="bg-white text-pink-600 px-8 py-4 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 whitespace-nowrap cursor-pointer">
+                {/* <button className="bg-white text-pink-600 px-8 py-4 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 whitespace-nowrap cursor-pointer">
                   Enroll Now
-                </button>
+                </button> */}
                 {/* <button className="bg-white/10 backdrop-blur-sm text-white border-2 border-white/20 px-8 py-4 rounded-2xl font-bold hover:bg-white/20 transition-all duration-300 whitespace-nowrap cursor-pointer">
                   Schedule a Visit
                 </button> */}
@@ -148,89 +148,9 @@ export default function ToddlersProgram() {
       </section>
 
       {/* Schedule & Pricing */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-black text-gray-900 mb-6">
-              Schedule & <span className="bg-gradient-to-r from-pink-500 to-rose-500 bg-clip-text text-transparent">Pricing</span>
-            </h2>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Schedule */}
-            <div className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-3xl p-8">
-              <h3 className="text-3xl font-bold text-gray-900 mb-8">Class Schedule</h3>
-              <div className="space-y-6">
-                <div className="flex justify-between items-center p-4 bg-white rounded-2xl">
-                  <div>
-                    <h4 className="font-bold text-gray-900">Morning Sessions</h4>
-                    <p className="text-gray-600">Perfect for active toddlers</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="font-bold text-pink-600">9:00 AM - 10:00 AM</p>
-                    <p className="text-sm text-gray-600">Mon, Wed, Fri</p>
-                  </div>
-                </div>
-                <div className="flex justify-between items-center p-4 bg-white rounded-2xl">
-                  <div>
-                    <h4 className="font-bold text-gray-900">Afternoon Sessions</h4>
-                    <p className="text-gray-600">Great for afternoon energy</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="font-bold text-pink-600">3:00 PM - 4:00 PM</p>
-                    <p className="text-sm text-gray-600">Tue, Thu, Sat</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Pricing */}
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-8 text-white">
-              <h3 className="text-3xl font-bold mb-8">Pricing Options</h3>
-              <div className="space-y-6">
-                <div className="p-6 bg-white/10 backdrop-blur-sm rounded-2xl">
-                  <h4 className="text-xl font-bold mb-2">Monthly Package</h4>
-                  <p className="text-3xl font-black text-pink-400 mb-4">$89<span className="text-sm text-gray-300">/month</span></p>
-                  <ul className="space-y-2 text-sm">
-                    <li>• 12 sessions per month</li>
-                    <li>• Small group setting (8-10 kids)</li>
-                    <li>• Progress tracking included</li>
-                  </ul>
-                </div>
-                <div className="p-6 bg-gradient-to-r from-pink-500 to-rose-500 rounded-2xl">
-                  <h4 className="text-xl font-bold mb-2">Drop-in Sessions</h4>
-                  <p className="text-3xl font-black mb-4">$25<span className="text-sm">/session</span></p>
-                  <ul className="space-y-2 text-sm">
-                    <li>• Perfect for trying out the program</li>
-                    <li>• No commitment required</li>
-                    <li>• Book when convenient</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-5xl font-black text-white mb-6">
-            Ready to Start Your Toddler's Journey?
-          </h2>
-          <p className="text-xl text-gray-300 mb-12">
-            Join our toddlers program and watch your child develop essential skills in a fun, safe environment
-          </p>
-          <div className="flex flex-wrap justify-center gap-6">
-            <button className="bg-gradient-to-r from-pink-500 to-rose-500 text-white px-8 py-4 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 whitespace-nowrap cursor-pointer">
-              Enroll Your Toddler Now
-            </button>
-            <button className="bg-white/10 backdrop-blur-sm text-white border-2 border-white/20 px-8 py-4 rounded-2xl font-bold hover:bg-white/20 transition-all duration-300 whitespace-nowrap cursor-pointer">
-              Schedule a Free Trial
-            </button>
-          </div>
-        </div>
-      </section>
+      
     </div>
   );
 }

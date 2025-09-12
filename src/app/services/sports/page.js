@@ -6,6 +6,7 @@ import EventServices from "../../../components/sportsEvents/EventServices";
 import EventPreparation from "../../../components/sportsEvents/EventPreparation";
 import EventTypes from "../../../components/sportsEvents/EventTypes";
 import EventContact from "../../../components/sportsEvents/EventContact";
+import CallToAction from "../../../components/home/CallToAction";
 
 const Sports = () => {
   return (
@@ -14,7 +15,8 @@ const Sports = () => {
       <EventServices />
       <EventPreparation />
       <EventTypes />
-      <EventContact/>
+      <CallToAction/>
+      {/* <EventContact/> */}
     </>
   );
 };

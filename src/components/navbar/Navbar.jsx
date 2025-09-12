@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from "react";
+import { useEffect, useState, useRef  } from "react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { SchoolName } from './SchoolName';
@@ -35,13 +35,13 @@ const ServiceMenu = ({ onClose }) => (
     animate={{ opacity: 1, y: 0 }}
     exit={{ opacity: 0, y: -20 }}
     transition={{ type: "spring", stiffness: 120, damping: 15, mass: 0.5 }}
-    className="min-w-45 min-h-60 bg-white border border-white rounded-sm shadow-md p-1 space-y-1"
+    className="min-w-45 min-h-50 bg-white border border-white rounded-sm shadow-md p-1 space-y-1"
   >
     <NavLink to="/services/sports" text="Sports" onClick={onClose} />
     <NavLink to="/services/birthdayEvents" text="Birthday Events" onClick={onClose} />
     <NavLink to="/services/parentToddler" text="Parent-Toddler" onClick={onClose} />
     <NavLink to="/services/afterSchool" text="After School" onClick={onClose} />
-    <NavLink to="/#allProgram" text="Our Programs" onClick={onClose} />
+    {/* <NavLink to="/#allProgram" text="Our Programs" onClick={onClose} /> */}
   </motion.div>
 );
 
@@ -71,6 +71,9 @@ export const Navbar = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isProgramsOpen, setIsProgramsOpen] = useState(false);
 
+  const servicesRef = useRef(null);
+  const programsRef = useRef(null);
+
   const toggleServices = () => {
     setIsServicesOpen(prev => !prev);
     setIsProgramsOpen(false); // close other
@@ -85,6 +88,24 @@ export const Navbar = () => {
     setIsServicesOpen(false);
     setIsProgramsOpen(false);
   };
+ 
+
+  // close dropdown 
+  useEffect (()=>{
+    const handleClick = (event) => {
+      if(
+         servicesRef.current?.contains(event.target) ||
+          programsRef.current?.contains(event.target)
+      ) {
+        return ;   // clicked inside dropdown → don’t close 
+      } 
+      closeDropdowns(); 
+    }; 
+    document.addEventListener("mousedown", handleClick); 
+    return () => {
+        document.removeEventListener("mousedown", handleClick); 
+    }; 
+  }, []); 
 
   return (
     <div className="fixed top-0 z-50 w-full py-3 px-6 lg:px-10 flex items-center justify-between 
@@ -95,10 +116,11 @@ export const Navbar = () => {
       
       <SchoolName />
 
+
       {/* Center: Navigation Links */}
-      <div className="hidden md:flex gap-2 h-[65px] items-center relative">
+      <div className="hidden lg:flex gap-2 h-[65px] items-center relative">
         <NavLink to="/#" text="Home" onClick={closeDropdowns} />
-        <NavLink to="/about" text="About_Us" onClick={closeDropdowns} />
+        <NavLink to="/about" text="About Us" onClick={closeDropdowns} />
 
         {/* Services Dropdown */}
         <div className="relative">
@@ -119,7 +141,7 @@ export const Navbar = () => {
                 className="absolute top-12 left-0 w-fit bg-white/80 text-gray-800 border border-gray-200 
                           rounded-lg shadow-lg p-2 backdrop-blur-md z-50"
               >
-                <ServiceMenu onClose={closeDropdowns} />
+                <ServiceMenu onClose={closeDropdowns} innerRef={servicesRef} />
               </motion.div>
             )}
           </AnimatePresence>
@@ -144,7 +166,7 @@ export const Navbar = () => {
                 className="absolute top-12 left-0 w-fit bg-white/80 text-gray-800 border border-gray-200 
                           rounded-lg shadow-lg p-2 backdrop-blur-md z-50"
               >
-                <ProgramMenu onClose={closeDropdowns} />
+                <ProgramMenu onClose={closeDropdowns} innerRef={programsRef} />
               </motion.div>
             )}
           </AnimatePresence>

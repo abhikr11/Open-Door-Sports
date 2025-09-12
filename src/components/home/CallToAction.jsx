@@ -2,7 +2,7 @@
 
 export default function CallToAction() {
   // Contact Information Variables
-  const phoneNumbers = ['+91 8981256825', '+91 9593382777'];
+  const phoneNumbers = ['+91 9593382777','+91 8981256825'];
   const email = 'opendoorsports19@gmail.com';
   const address = `24b/ 1a, Dr Suresh Sarkar Road, Near Entally\nPOST OFFICE KOLKATA-700014`;
 

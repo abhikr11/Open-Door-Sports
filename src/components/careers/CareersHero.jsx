@@ -36,10 +36,10 @@ export default function CareersHero() {
               <i className="ri-file-text-line w-5 h-5 flex items-center justify-center mr-2 inline-flex"></i>
               Apply Now
             </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 whitespace-nowrap cursor-pointer">
+            {/* <button className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 whitespace-nowrap cursor-pointer">
               <i className="ri-team-line w-5 h-5 flex items-center justify-center mr-2 inline-flex"></i>
               Meet Our Team
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

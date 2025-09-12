@@ -25,14 +25,14 @@ export default function Hero() {
             A comprehensive initiative nurturing overall well-being and development of students through mental wellness, physical health, nutrition, and education.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg whitespace-nowrap cursor-pointer">
+            {/* <button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg whitespace-nowrap cursor-pointer">
               <i className="ri-play-circle-line w-5 h-5 flex items-center justify-center mr-2 inline-flex"></i>
               Learn More
-            </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-purple-600 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 whitespace-nowrap cursor-pointer">
+            </button> */}
+            {/* <button className="border-2 border-white text-white hover:bg-white hover:text-purple-600 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 whitespace-nowrap cursor-pointer">
               <i className="ri-phone-line w-5 h-5 flex items-center justify-center mr-2 inline-flex"></i>
               Contact Us
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

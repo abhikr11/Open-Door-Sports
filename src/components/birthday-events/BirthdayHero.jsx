@@ -36,14 +36,14 @@ export default function BirthdayHero() {
             From obstacle courses to group games, we bring the excitement of sports into your child's celebration, ensuring a day full of laughter, movement, and joyful memories.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4">
+          {/* <div className="flex flex-col sm:flex-row gap-4">
             <button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors whitespace-nowrap cursor-pointer">
               Book Your Party
             </button>
             <button className="border-2 border-purple-600 text-purple-600 hover:bg-purple-50 px-8 py-4 rounded-lg font-semibold text-lg transition-colors whitespace-nowrap cursor-pointer">
               View Packages
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

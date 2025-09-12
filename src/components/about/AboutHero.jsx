@@ -23,7 +23,7 @@ export default function AboutHero() {
           <p className="text-xl lg:text-2xl mb-8 max-w-3xl leading-relaxed text-gray-200">
             Dedicated to fostering overall gross motor development of children through thoughtfully curated physical activities and sports programs.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          {/* <div className="flex flex-col sm:flex-row gap-4">
             <button className="bg-gradient-to-r from-green-500 to-blue-600 hover:from-green-600 hover:to-blue-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg whitespace-nowrap cursor-pointer">
               <i className="ri-team-line w-5 h-5 flex items-center justify-center mr-2 inline-flex"></i>
               Our Programs
@@ -32,7 +32,7 @@ export default function AboutHero() {
               <i className="ri-phone-line w-5 h-5 flex items-center justify-center mr-2 inline-flex"></i>
               Contact Us
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
       

@@ -51,10 +51,10 @@ export default function SportsHero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-gradient-to-r from-sky-400 to-blue-600 text-white px-8 py-4 rounded-2xl text-lg font-bold hover:shadow-2xl hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer">
+              {/* <button className="bg-gradient-to-r from-sky-400 to-blue-600 text-white px-8 py-4 rounded-2xl text-lg font-bold hover:shadow-2xl hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer">
                 <i className="ri-calendar-line w-5 h-5 flex items-center justify-center mr-2 inline-flex"></i>
                 Book Your Event
-              </button>
+              </button> */}
               <button className="bg-white/20 backdrop-blur-sm border-2 border-white/30 text-white px-8 py-4 rounded-2xl text-lg font-bold hover:bg-white/30 transition-all duration-300 whitespace-nowrap cursor-pointer">
                 <i className="ri-play-circle-line w-5 h-5 flex items-center justify-center mr-2 inline-flex"></i>
                 Watch Demo

@@ -48,9 +48,9 @@ export default function GalleryHero() {
             <a href="#gallery" className="bg-gradient-to-r from-yellow-400 to-pink-400 text-gray-900 px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all cursor-pointer whitespace-nowrap">
               View Photos
             </a>
-            <Link href="/sports-events#contact" className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all cursor-pointer whitespace-nowrap">
+            {/* <Link href="/sports-events#contact" className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all cursor-pointer whitespace-nowrap">
               Join Our Programs
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

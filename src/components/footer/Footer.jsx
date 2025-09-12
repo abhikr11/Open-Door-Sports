@@ -5,56 +5,40 @@ export default function Footer() {
     { name: 'About Program', href: '/about' },
     { name: 'Key Elements', href: '/#allProgram' },
     { name: 'Success Stories', href: '/#TestimonialsSection' },
-    { name: 'careers', href: '/careers' },
+    { name: 'Careers', href: '/careers' },
     { name: 'Contact', href: '/#callToAction' }
-  ];
-
-  const programs = [
-    { name: 'Mental Wellness', href: '/services/intergratedProgram' },
-    { name: 'School Sports', href: '/services/sports' },
-    { name: 'Birthday Adventures', href: '/services/birthdayEvents' },
-    { name: 'Academic Support', href: '/services/parentToddler' },
-    { name: 'Special Needs', href: '#' }
-  ];
-
-  const resources = [
-    { name: 'Parent Resources', href: '#' },
-    { name: 'Student Portal', href: '#' },
-    { name: 'Program Calendar', href: '#' },
-    { name: 'News & Updates', href: '#' },
-    { name: 'Gallery', href: '/gallery' }
   ];
 
   return (
     <footer className="bg-gray-900 text-white py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+          {/* Left Section */}
           <div className="space-y-6">
-            <div>
-              <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Pacifico, serif' }}>
-                OPEN DOOR SPORTS
-              </h3>
-              <p className="text-gray-400 leading-relaxed">
-                Nurturing holistic development through comprehensive education that encompasses mental wellness, physical health, nutrition, and academic excellence.
-              </p>
-            </div>
-            <div className="flex space-x-4">
-              <button className="bg-blue-600 hover:bg-blue-700 p-3 rounded-full transition-colors cursor-pointer">
+            <h3 className="text-3xl font-bold mb-4" style={{ fontFamily: 'Pacifico, serif' }}>
+              OPEN DOOR SPORTS
+            </h3>
+            <p className="text-gray-400 leading-relaxed">
+              Nurturing holistic development through comprehensive education that encompasses mental wellness, physical health, nutrition, and academic excellence.
+            </p>
+            <div className="flex space-x-4 mt-4">
+              <a href="#" className="bg-blue-600 hover:bg-blue-700 p-3 rounded-full transition-colors">
                 <i className="ri-facebook-fill w-5 h-5 flex items-center justify-center text-lg"></i>
-              </button>
-              <button className="bg-blue-400 hover:bg-blue-500 p-3 rounded-full transition-colors cursor-pointer">
+              </a>
+              <a href="#" className="bg-blue-400 hover:bg-blue-500 p-3 rounded-full transition-colors">
                 <i className="ri-twitter-fill w-5 h-5 flex items-center justify-center text-lg"></i>
-              </button>
-              <button className="bg-pink-600 hover:bg-pink-700 p-3 rounded-full transition-colors cursor-pointer">
+              </a>
+              <a href="#" className="bg-pink-600 hover:bg-pink-700 p-3 rounded-full transition-colors">
                 <i className="ri-instagram-fill w-5 h-5 flex items-center justify-center text-lg"></i>
-              </button>
-              <button className="bg-red-600 hover:bg-red-700 p-3 rounded-full transition-colors cursor-pointer">
+              </a>
+              <a href="#" className="bg-red-600 hover:bg-red-700 p-3 rounded-full transition-colors">
                 <i className="ri-youtube-fill w-5 h-5 flex items-center justify-center text-lg"></i>
-              </button>
+              </a>
             </div>
           </div>
 
-          <div>
+          {/* Right Section */}
+          {/* <div>
             <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
@@ -65,41 +49,16 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-semibold mb-6">Programs</h4>
-            <ul className="space-y-3">
-              {programs.map((program, index) => (
-                <li key={index}>
-                  <a href={program.href} className="text-gray-400 hover:text-white transition-colors cursor-pointer">
-                    {program.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-semibold mb-6">Resources</h4>
-            <ul className="space-y-3">
-              {resources.map((resource, index) => (
-                <li key={index}>
-                  <a href={resource.href} className="text-gray-400 hover:text-white transition-colors cursor-pointer">
-                    {resource.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          </div> */}
         </div>
 
+        {/* Footer Bottom */}
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <a href="https://e-portfolio-avi.vercel.app/" className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-sm text-center md:text-left">
               © 2025 Jha@Avinash. All rights reserved.
-            </a>
-            <div className="flex space-x-6 mt-4 md:mt-0">
+            </p>
+            <div className="flex flex-wrap justify-center md:justify-end gap-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">
                 Privacy Policy
               </a>

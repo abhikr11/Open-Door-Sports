@@ -19,7 +19,7 @@ export const IconsBox = () => {
       <i className={`ri-youtube-fill hidden xl:block ${iconStyle}`}></i>
 
       {/* Mobile menu icon */}
-      <div className="relative md:hidden cursor-pointer">
+      <div className="relative lg:hidden cursor-pointer">
         <i
           className={`ri-menu-3-line ${iconStyle}`}
           onClick={() => setIsOpen(!isOpen)}

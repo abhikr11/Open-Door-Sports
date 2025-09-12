@@ -24,14 +24,14 @@ export default function HeroSection() {
           <p className="text-lg mb-12 text-blue-100 max-w-3xl mx-auto">
             Foster strong bonds between parents and toddlers while promoting holistic growth during these formative years in our supportive, safe environment
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors cursor-pointer whitespace-nowrap">
               Register Now
             </button>
             <button className="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/20 transition-colors cursor-pointer whitespace-nowrap">
               Learn More
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -15,8 +15,8 @@ export default function Home() {
         <HeroSection />
         <ProgramOverview />
         <BenefitsSection />
-        <ProgramDetailsSection />
-        <TestimonialsSection />
+        {/* <ProgramDetailsSection /> */}
+        {/* <TestimonialsSection /> */}
         <CallToAction/>
     </div>
   );

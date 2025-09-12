@@ -49,7 +49,7 @@ export default function ProgramsSection() {
   ];
 
   return (
-    <div id="allProgram" className="w-[98%] mx-auto   p-1 pb-0 border-2 border-white bg-blue-300/30  rounded-t-xl">
+    <div id="allProgram" className="w-[98%] mx-auto   p-1 pb-0   rounded-t-xl">
       <section className="py-15 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           {/* Section Header */}

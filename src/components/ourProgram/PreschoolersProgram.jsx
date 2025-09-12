@@ -64,9 +64,9 @@ export default function PreschoolersProgram() {
                 At this stage, our focus is on fostering the overall physical development of the child. The program is designed to enhance physical fitness, while also identifying and nurturing individual talents and motor skills.
               </p>
               <div className="flex flex-wrap gap-4">
-                <button className="bg-white text-blue-600 px-8 py-4 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 whitespace-nowrap cursor-pointer">
+                {/* <button className="bg-white text-blue-600 px-8 py-4 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 whitespace-nowrap cursor-pointer">
                   Enroll Now
-                </button>
+                </button> */}
                 {/* <button className="bg-white/10 backdrop-blur-sm text-white border-2 border-white/20 px-8 py-4 rounded-2xl font-bold hover:bg-white/20 transition-all duration-300 whitespace-nowrap cursor-pointer">
                   Schedule a Visit
                 </button> */}
@@ -147,16 +147,16 @@ export default function PreschoolersProgram() {
       </section>
 
       {/* Schedule & Pricing */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
+      {/* <section className="py-24 bg-white"> */}
+        {/* <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-black text-gray-900 mb-6">
               Schedule & <span className="bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">Pricing</span>
             </h2>
-          </div>
+          </div> */}
 
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Schedule */}
+          {/* <div className="grid lg:grid-cols-2 gap-12">
+            
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-3xl p-8">
               <h3 className="text-3xl font-bold text-gray-900 mb-8">Class Schedule</h3>
               <div className="space-y-6">
@@ -183,7 +183,7 @@ export default function PreschoolersProgram() {
               </div>
             </div>
 
-            {/* Pricing */}
+            
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-8 text-white">
               <h3 className="text-3xl font-bold mb-8">Pricing Options</h3>
               <div className="space-y-6">
@@ -207,12 +207,12 @@ export default function PreschoolersProgram() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </div> */}
+        {/* </div> */}
+      {/* </section> */}
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900">
+      {/* <section className="py-24 bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-5xl font-black text-white mb-6">
             Ready to Develop Your Child's Potential?
@@ -229,7 +229,7 @@ export default function PreschoolersProgram() {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

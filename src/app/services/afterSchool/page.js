@@ -11,7 +11,7 @@ export default function AfterSchool() {
       <AfterSchoolHero/>
       <AfterFeaturesSection />
       <AfterBenefit/>
-      <AfterTestimonialsSection />
+      {/* <AfterTestimonialsSection /> */}
     </div>
   );
 }

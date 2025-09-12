@@ -22,16 +22,7 @@ export default function EventPreparation() {
         'Individual coaching for special events'
       ]
     },
-    {
-      phase: 'Final Week',
-      title: 'Event Setup & Execution',
-      activities: [
-        'Venue decoration and equipment setup',
-        'Final safety checks and briefings',
-        'Event day coordination and management',
-        'Awards ceremony and documentation'
-      ]
-    }
+    
   ];
 
   return (
@@ -46,7 +37,7 @@ export default function EventPreparation() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {preparationSteps.map((step, index) => (
             <div key={index} className="relative">
               <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">

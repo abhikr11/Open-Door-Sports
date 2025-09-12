@@ -31,6 +31,15 @@ export default function ServicesSection() {
       features: ["Themed activities", "Obstacle courses", "Group challenges", "Party coordination"],
       image: "https://readdy.ai/api/search-image?query=Childrens%20birthday%20party%20with%20sports%20theme%2C%20kids%20playing%20active%20games%20with%20colorful%20decorations%2C%20balloons%2C%20birthday%20cake%2C%20obstacle%20course%20setup%2C%20happy%20children%20laughing%20and%20playing%20together%20in%20outdoor%20party%20setting&width=500&height=300&seq=birthday-modern&orientation=landscape",
       link: "/services/birthdayEvents"
+    }, 
+    {
+      title: "Parent Toddler Program",
+      description: "Nurturing early childhood growth through play and guided activities.",
+      icon: "🏠",
+      color: "from-purple-500 to-pink-500",
+      features: ["Social Interaction", "Parent-Child Bonding", "Language Development", "Cognitive Development"],
+      image: "https://readdy.ai/api/search-image?query=Children%20participating%20in%20after-school%20sports%20activities%20in%20a%20modern%20apartment%20complex%20courtyard%2C%20small%20group%20doing%20fun%20physical%20exercises%20with%20colorful%20equipment%2C%20friendly%20coach%20leading%20activities%2C%20safe%20residential%20environment%20with%20natural%20lighting&width=500&height=300&seq=after-school-modern&orientation=landscape",
+      link: "/services/parentToddler"
     }
   ];
 
@@ -65,6 +74,8 @@ export default function ServicesSection() {
     }
   ];
 
+
+
   return (
     <section className="py-10 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
@@ -82,10 +93,10 @@ export default function ServicesSection() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-20">
+        <div className="flex overflow-x-auto scrollbar-hidden gap-8 mb-20 p-10">
           {services.map((service, index) => (
-            <div key={index} className="group relative">
-              <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
+            <div key={index} className="group relative min-w-100">
+              <div className="bg-white rounded-3xl p-8 shadow-sm  transition-all duration-500 hover:-translate-y-2 border border-gray-100">
                 {/* Service Icon */}
                 <div className={`w-16 h-16 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300`}>
                   {service.icon}

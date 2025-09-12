@@ -5,6 +5,7 @@ import ActivitiesSection from "../../../components/birthday-events/ActivitiesSec
 import TestimonialsSection from "../../../components/birthday-events/TestimonialsSection";
 import PricingSection from "../../../components/birthday-events/PricingSection";
 import BookingSection from "../../../components/birthday-events/BookingSection";
+import CallToAction from "../../../components/home/CallToAction";
 
 
 export default function BirthdayPage() {
@@ -13,9 +14,10 @@ export default function BirthdayPage() {
       <BirthdayHero />
       <FeaturesSection />
       <ActivitiesSection />
-      <TestimonialsSection />
-      <PricingSection />
-      <BookingSection />
+      {/* <TestimonialsSection /> */}
+      {/* <PricingSection /> */}
+      {/* <BookingSection /> */}
+      <CallToAction/> 
     </div>
   );
 }
