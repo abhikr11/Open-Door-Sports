@@ -3,7 +3,7 @@
 export default function ProgramStats() {
   const stats = [
     {
-      number: '500+',
+      number: '1500+',
       label: 'Students Enrolled',
       icon: 'ri-group-line',
       color: 'from-blue-500 to-indigo-600'
@@ -15,7 +15,7 @@ export default function ProgramStats() {
       color: 'from-green-500 to-emerald-600'
     },
     {
-      number: '95%',
+      number: '98%',
       label: 'Satisfaction Rate',
       icon: 'ri-heart-line',
       color: 'from-purple-500 to-pink-500'

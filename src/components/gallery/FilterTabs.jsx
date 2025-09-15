@@ -7,10 +7,6 @@ export default function FilterTabs({ activeFilter, onFilterChange }) {
     { id: 'all', label: 'All Media', emoji: '📸' },
     { id: 'photos', label: 'Photos', emoji: '🖼️' },
     { id: 'videos', label: 'Videos', emoji: '🎬' },
-    { id: 'toddlers', label: 'Toddlers', emoji: '🧸' },
-    { id: 'preschoolers', label: 'Preschoolers', emoji: '⚽' },
-    { id: 'prep-level', label: 'Prep Level', emoji: '🏃' },
-    { id: 'above-prep', label: 'Above Prep', emoji: '🏆' },
     { id: 'events', label: 'Special Events', emoji: '🎉' },
   ];
 

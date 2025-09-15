@@ -35,7 +35,7 @@ export default function GalleryHero() {
               <div className="text-sm text-blue-200">Happy Moments</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-pink-400 mb-2">50+</div>
+              <div className="text-3xl font-bold text-pink-400 mb-2">100+</div>
               <div className="text-sm text-blue-200">Events Covered</div>
             </div>
             <div className="text-center">
@@ -45,9 +45,9 @@ export default function GalleryHero() {
           </div>
 
           <div className="flex justify-center space-x-4">
-            <a href="#gallery" className="bg-gradient-to-r from-yellow-400 to-pink-400 text-gray-900 px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all cursor-pointer whitespace-nowrap">
+            {/*<a href="#gallery" className="bg-gradient-to-r from-yellow-400 to-pink-400 text-gray-900 px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all cursor-pointer whitespace-nowrap">
               View Photos
-            </a>
+            </a>*/}
             {/* <Link href="/sports-events#contact" className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all cursor-pointer whitespace-nowrap">
               Join Our Programs
             </Link> */}

@@ -17,14 +17,12 @@ export default function PhotoGrid({ activeFilter }) {
     },
     {
       id: 'video-1',
-      src: 'https://readdy.ai/api/search-image?query=video%20thumbnail%20showing%20toddlers%20age%202-4%20years%20in%20action%20playing%20with%20soft%20play%20equipment%2C%20crawling%20through%20tunnels%2C%20and%20learning%20basic%20movements%20with%20instructors%2C%20bright%20colorful%20environment%2C%20play%20button%20overlay&width=400&height=300&seq=toddler-video-1&orientation=landscape',
-      alt: 'Toddlers Program Video',
-      category: 'toddlers',
+      src: 'https://img.youtube.com/vi/dpLtvTG3XK0/hqdefault.jpg',
       title: 'Toddlers in Action',
       description: 'Watch how our youngest participants develop motor skills',
       type: 'video',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      duration: '2:30'
+      videoUrl: 'https://www.youtube.com/embed/dpLtvTG3XK0?si=OL6lBbL7w2ft0_L0',
+      duration: '1:46'
     },
     {
       id: '2',
@@ -37,14 +35,12 @@ export default function PhotoGrid({ activeFilter }) {
     },
     {
       id: 'video-2',
-      src: 'https://readdy.ai/api/search-image?query=video%20thumbnail%20of%20preschool%20children%20age%204-6%20years%20playing%20soccer%20and%20learning%20basic%20sports%20skills%2C%20action%20shots%20of%20kids%20running%20and%20playing%2C%20indoor%20sports%20facility%2C%20play%20button%20overlay&width=400&height=300&seq=preschool-video-1&orientation=landscape',
-      alt: 'Preschoolers Training Video',
-      category: 'preschoolers',
+      src: 'https://img.youtube.com/vi/hl0v3UYpYYs/hqdefault.jpg',
       title: 'Soccer Skills Development',
       description: 'See how preschoolers master basic soccer techniques',
       type: 'video',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      duration: '3:45'
+      videoUrl: 'https://www.youtube.com/embed/hl0v3UYpYYs?si=96r8-_C5WoFX28OO',
+      duration: '0:41'
     },
     {
       id: '3',
@@ -57,14 +53,12 @@ export default function PhotoGrid({ activeFilter }) {
     },
     {
       id: 'video-3',
-      src: 'https://readdy.ai/api/search-image?query=video%20thumbnail%20showing%20children%20age%207-12%20years%20in%20competitive%20sports%20training%2C%20track%20and%20field%20events%2C%20gymnastics%20routines%2C%20team%20sports%20practice%2C%20modern%20athletic%20facility%2C%20play%20button%20overlay&width=400&height=300&seq=prep-video-1&orientation=landscape',
-      alt: 'Prep Level Competition Video',
-      category: 'prep-level',
+      src: 'https://img.youtube.com/vi/YBFA7Y6ueR8/hqdefault.jpg',
       title: 'Competitive Training',
       description: 'Watch prep level athletes in competitive action',
       type: 'video',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      duration: '4:20'
+      videoUrl: 'https://www.youtube.com/embed/YBFA7Y6ueR8?si=cMpUY_t666Uge5FC',
+      duration: '0:27'
     },
     {
       id: '4',
@@ -77,14 +71,12 @@ export default function PhotoGrid({ activeFilter }) {
     },
     {
       id: 'video-4',
-      src: 'https://readdy.ai/api/search-image?query=video%20thumbnail%20of%20teenagers%20age%2012%20plus%20in%20advanced%20fitness%20training%2C%20strength%20building%20exercises%2C%20leadership%20development%20activities%2C%20professional%20sports%20facility%2C%20play%20button%20overlay&width=400&height=300&seq=above-prep-video-1&orientation=landscape',
-      alt: 'Above Prep Leadership Video',
-      category: 'above-prep',
+      src: 'https://img.youtube.com/vi/FCtTmF4fds8/hqdefault.jpg',
       title: 'Leadership Development',
       description: 'Advanced athletes developing leadership and teamwork',
       type: 'video',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      duration: '5:15'
+      videoUrl: 'https://www.youtube.com/embed/FCtTmF4fds8?si=iaen_BLz3_hu7N-Q',
+      duration: '0:17'
     },
     {
       id: '5',
@@ -97,14 +89,12 @@ export default function PhotoGrid({ activeFilter }) {
     },
     {
       id: 'video-5',
-      src: 'https://readdy.ai/api/search-image?query=video%20thumbnail%20of%20birthday%20party%20celebration%20in%20sports%20facility%20with%20children%20playing%20games%2C%20families%20celebrating%2C%20cake%20cutting%2C%20party%20decorations%2C%20joyful%20atmosphere%2C%20play%20button%20overlay&width=400&height=300&seq=event-video-1&orientation=landscape',
-      alt: 'Birthday Party Video',
-      category: 'events',
+      src: 'https://img.youtube.com/vi/pjQTJ4oJ1Og/hqdefault.jpg',
       title: 'Party Highlights',
       description: 'Memorable moments from our sports-themed birthday parties',
       type: 'video',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      duration: '3:20'
+      videoUrl: 'https://www.youtube.com/embed/pjQTJ4oJ1Og?si=vYpLo6TFB3O3qhGs',
+      duration: '0:35'
     },
     {
       id: '6',
@@ -150,17 +140,6 @@ export default function PhotoGrid({ activeFilter }) {
       title: 'Annual Sports Day',
       description: 'Community celebration of achievements and fun',
       type: 'photo'
-    },
-    {
-      id: 'video-6',
-      src: 'https://readdy.ai/api/search-image?query=video%20thumbnail%20of%20annual%20sports%20day%20event%20with%20children%20of%20all%20ages%2C%20awards%20ceremony%2C%20families%20cheering%2C%20community%20celebration%2C%20sports%20facility%2C%20play%20button%20overlay&width=400&height=300&seq=event-video-2&orientation=landscape',
-      alt: 'Sports Day Video',
-      category: 'events',
-      title: 'Sports Day Highlights',
-      description: 'Best moments from our annual sports day celebration',
-      type: 'video',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      duration: '6:30'
     },
     {
       id: '11',

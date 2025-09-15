@@ -1,30 +1,25 @@
 'use client';
 
-import { useEffect, useState, useRef  } from "react";
-import { useRouter } from "next/navigation";
+import { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 import { SchoolName } from './SchoolName';
 import { IconsBox } from './IconsBox';
 
 // ------------------- NavLink Component -------------------
 export const NavLink = ({ to, text, className = '', onClick }) => {
-  const router = useRouter();
-  const handleClick = (e) => {
-    e.preventDefault();
-    if (onClick) onClick();  // e.g., close dropdown
-    router.push(to);         // SPA navigation
-  };
-
   return (
-    <button
-      onClick={handleClick}
-      className={`relative text-start inline-block text-[#0408C3] cursor-pointer font-medium text-[18px] px-3 py-2
-                hover:text-[#17246D] transition duration-300 ease-in-out 
-                after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 
-                after:bg-[#17246D] after:transition-all after:duration-300 hover:after:w-full ${className}`}
+    <Link
+      href={to}
+      onClick={onClick}
+      className={`relative inline-block align-middle text-[#0408C3] font-medium text-[18px] px-3 py-2
+                 hover:text-[#17246D] transition duration-300 ease-in-out 
+                 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 
+                 after:bg-[#17246D] after:transition-all after:duration-300 hover:after:w-full 
+                 select-none cursor-pointer ${className}`}
     >
       {text}
-    </button>
+    </Link>
   );
 };
 
@@ -39,9 +34,8 @@ const ServiceMenu = ({ onClose }) => (
   >
     <NavLink to="/services/sports" text="Sports" onClick={onClose} />
     <NavLink to="/services/birthdayEvents" text="Birthday Events" onClick={onClose} />
-    <NavLink to="/services/parentToddler" text="Parent-Toddler" onClick={onClose} />
+    <NavLink to="/services/parentToddler" text="Parent Toddler" onClick={onClose} />
     <NavLink to="/services/afterSchool" text="After School" onClick={onClose} />
-    {/* <NavLink to="/#allProgram" text="Our Programs" onClick={onClose} /> */}
   </motion.div>
 );
 
@@ -54,7 +48,7 @@ const ProgramMenu = ({ onClose }) => (
     className="min-w-45 max-w-45 min-h-60 bg-white border border-white rounded-sm shadow-md p-1 space-y-1"
   >
     <NavLink to="/program/toddlersProgram" text="Toddlers" onClick={onClose} />
-    <NavLink to="/program/PreschoolersProgram" text="Preschoolers " onClick={onClose} />
+    <NavLink to="/program/PreschoolersProgram" text="Preschoolers" onClick={onClose} />
     <NavLink to="/program/preLevelProgram" text="Prep Level" onClick={onClose} />
     <NavLink to="/program/abovePrepProgram" text="Above Prep Level" onClick={onClose} />
     <NavLink to="/services/intergratedProgram" text="Integrated" onClick={onClose} />
@@ -63,10 +57,10 @@ const ProgramMenu = ({ onClose }) => (
 
 // ------------------- Navbar Component -------------------
 export const Navbar = () => {
-  
   const btnAnimation = `hover:text-[#17246D] transition duration-300 ease-in-out 
                         after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 
-                        after:bg-[#17246D] after:transition-all after:duration-300 hover:after:w-full`
+                        after:bg-[#17246D] after:transition-all after:duration-300 hover:after:w-full 
+                        select-none cursor-pointer`;
 
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isProgramsOpen, setIsProgramsOpen] = useState(false);
@@ -76,46 +70,43 @@ export const Navbar = () => {
 
   const toggleServices = () => {
     setIsServicesOpen(prev => !prev);
-    setIsProgramsOpen(false); // close other
+    setIsProgramsOpen(false);
   };
 
   const togglePrograms = () => {
     setIsProgramsOpen(prev => !prev);
-    setIsServicesOpen(false); // close other
+    setIsServicesOpen(false);
   };
 
   const closeDropdowns = () => {
     setIsServicesOpen(false);
     setIsProgramsOpen(false);
   };
- 
 
-  // close dropdown 
-  useEffect (()=>{
+  // close dropdown when clicking outside
+  useEffect(() => {
     const handleClick = (event) => {
-      if(
-         servicesRef.current?.contains(event.target) ||
-          programsRef.current?.contains(event.target)
+      if (
+        servicesRef.current?.contains(event.target) ||
+        programsRef.current?.contains(event.target)
       ) {
-        return ;   // clicked inside dropdown → don’t close 
-      } 
-      closeDropdowns(); 
-    }; 
-    document.addEventListener("mousedown", handleClick); 
+        return;
+      }
+      closeDropdowns();
+    };
+    document.addEventListener("mousedown", handleClick);
     return () => {
-        document.removeEventListener("mousedown", handleClick); 
-    }; 
-  }, []); 
+      document.removeEventListener("mousedown", handleClick);
+    };
+  }, []);
 
   return (
     <div className="fixed top-0 z-50 w-full py-3 px-6 lg:px-10 flex items-center justify-between 
                     bg-gradient-to-r from-white via-white-100/5 to-white/40 
-                    backdrop-blur-md shadow-md border-b border-green-200/40">
+                    backdrop-blur-md shadow-md border-b border-green-200/40 cursor-default select-none">
 
       {/* Left: School Name or Logo */}
-      
       <SchoolName />
-
 
       {/* Center: Navigation Links */}
       <div className="hidden lg:flex gap-2 h-[65px] items-center relative">
@@ -123,11 +114,11 @@ export const Navbar = () => {
         <NavLink to="/about" text="About Us" onClick={closeDropdowns} />
 
         {/* Services Dropdown */}
-        <div className="relative">
+        <div className="relative" ref={servicesRef}>
           <button
             onClick={toggleServices}
-            className={`relative inline-block text-[#0408C3] font-medium text-[18px] px-3 py-2 cursor-pointer
-                      hover:text-[#17246D] transition duration-300 ease-in-out ${btnAnimation}`}
+            className={`relative inline-block text-[#0408C3] font-medium text-[18px] px-3 py-2 
+                        ${btnAnimation}`}
           >
             Services
           </button>
@@ -141,20 +132,20 @@ export const Navbar = () => {
                 className="absolute top-12 left-0 w-fit bg-white/80 text-gray-800 border border-gray-200 
                           rounded-lg shadow-lg p-2 backdrop-blur-md z-50"
               >
-                <ServiceMenu onClose={closeDropdowns} innerRef={servicesRef} />
+                <ServiceMenu onClose={closeDropdowns} />
               </motion.div>
             )}
           </AnimatePresence>
         </div>
 
         {/* Programs Dropdown */}
-        <div className="relative">
+        <div className="relative" ref={programsRef}>
           <button
             onClick={togglePrograms}
-            className={`relative inline-block text-[#0408C3] font-medium text-[18px] px-3 py-2 cursor-pointer
-                      hover:text-[#17246D] transition duration-300 ease-in-out ${btnAnimation}`}
+            className={`relative inline-block text-[#0408C3] font-medium text-[18px] px-3 py-2 
+                        ${btnAnimation}`}
           >
-            Programs
+            Program
           </button>
           <AnimatePresence>
             {isProgramsOpen && (
@@ -166,7 +157,7 @@ export const Navbar = () => {
                 className="absolute top-12 left-0 w-fit bg-white/80 text-gray-800 border border-gray-200 
                           rounded-lg shadow-lg p-2 backdrop-blur-md z-50"
               >
-                <ProgramMenu onClose={closeDropdowns} innerRef={programsRef} />
+                <ProgramMenu onClose={closeDropdowns} />
               </motion.div>
             )}
           </AnimatePresence>

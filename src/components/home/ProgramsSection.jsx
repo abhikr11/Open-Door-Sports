@@ -21,7 +21,7 @@ export default function ProgramsSection() {
       age: "Ages 4.5 to 7 years",
       description: "At this stage, our focus is on fostering the overall physical development of the child. The program is designed to enhance physical fitness, while also identifying and nurturing individual talents and motor skills. Children engage in activities that build strength, coordination, and confidence.",
       focus: "Building strength, coordination, and confidence through structured activities and regular practice.",
-      icon: "program_icon/kr003.png",
+      icon: "program_icon/pp002.png",
       color: "from-blue-400 to-cyan-500",
       image: "https://readdy.ai/api/search-image?query=Preschool%20children%20aged%204%20to%207%20years%20participating%20in%20structured%20physical%20activities%2C%20kids%20doing%20coordination%20exercises%20with%20colorful%20equipment%2C%20instructor%20demonstrating%20movements%2C%20bright%20gymnasium%20setting%20with%20safety%20mats&width=400&height=300&seq=preschoolers-program&orientation=landscape",
       link: "/program/PreschoolersProgram"
@@ -31,7 +31,7 @@ export default function ProgramsSection() {
       age: "Ages 7.5 to 12 years",
       description: "At this stage, children are introduced to specific sports and co-curricular activities that challenge and refine their growing abilities. The focus is on applying their developing skills in more structured, competitive, and team-based settings, fostering discipline, teamwork, and a spirit of healthy competition.",
       focus: "Significant improvements in gross motor development, coordination, and confidence through consistent physical practice.",
-      icon: "program_icon/pp002.png",
+      icon: "program_icon/kr003.png",
       color: "from-green-400 to-emerald-500",
       image: "https://readdy.ai/api/search-image?query=Children%20aged%207%20to%2012%20years%20playing%20organized%20sports%20activities%20like%20soccer%20and%20basketball%2C%20kids%20practicing%20specific%20sports%20skills%20with%20proper%20equipment%2C%20competitive%20yet%20fun%20atmosphere%20in%20modern%20sports%20facility&width=400&height=300&seq=prep-level-program&orientation=landscape",
       link: "/program/preLevelProgram"

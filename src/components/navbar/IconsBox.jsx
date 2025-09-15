@@ -13,10 +13,37 @@ export const IconsBox = () => {
   return (
     <div className="gap-6 flex items-center">
       {/* Desktop icons */}
-      <i className={`ri-facebook-fill hidden xl:block ${iconStyle}`}></i>
-      <i className={`ri-instagram-line hidden xl:block ${iconStyle}`}></i>
-      <i className={`ri-whatsapp-line hidden xl:block ${iconStyle}`}></i>
-      <i className={`ri-youtube-fill hidden xl:block ${iconStyle}`}></i>
+      <a
+        href="https://www.facebook.com/opendoorsports19/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i className={`ri-facebook-fill hidden xl:block ${iconStyle}`}></i>
+      </a>
+
+      <a
+        href="https://www.instagram.com/opendoorsports_03/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i className={`ri-instagram-line hidden xl:block ${iconStyle}`}></i>
+      </a>
+
+      <a
+        href="https://wa.me/9593382777"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i className={`ri-whatsapp-line hidden xl:block ${iconStyle}`}></i>
+      </a>
+
+      <a
+        href="https://www.youtube.com/@opendoorsports3576"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i className={`ri-youtube-fill hidden xl:block ${iconStyle}`}></i>
+      </a>
 
       {/* Mobile menu icon */}
       <div className="relative lg:hidden cursor-pointer">

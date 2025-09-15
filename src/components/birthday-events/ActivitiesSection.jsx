@@ -11,7 +11,7 @@ export default function ActivitiesSection() {
     },
     {
       title: 'Team Sports Games',
-      description: 'Modified versions of popular sports like soccer, basketball, and volleyball designed for birthday fun.',
+      description: 'Modified versions of popular sports like cricket, soccer, basketball and many more to explore designed for birthday fun.',
       image: 'https://readdy.ai/api/search-image?query=Group%20of%20diverse%20children%20playing%20modified%20team%20sports%20games%20in%20indoor%20gym%2C%20colorful%20equipment%2C%20birthday%20party%20setting%20with%20decorations%2C%20kids%20in%20casual%20clothes%20having%20fun%2C%20energetic%20atmosphere%2C%20safety%20equipment%20visible&width=600&height=400&seq=team-sports&orientation=landscape',
       ageGroup: 'Ages 5-14'
     },

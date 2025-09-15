@@ -4,7 +4,7 @@ export default function CallToAction() {
   // Contact Information Variables
   const phoneNumbers = ['+91 9593382777','+91 8981256825'];
   const email = 'opendoorsports19@gmail.com';
-  const address = `24b/ 1a, Dr Suresh Sarkar Road, Near Entally\nPOST OFFICE KOLKATA-700014`;
+  const address = `24b/ 1a, Dr Suresh Sarkar Road, Near Entally\nPost Office Kolkata-700014`;
 
   return (
     <section id="callToAction" className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
@@ -18,7 +18,7 @@ export default function CallToAction() {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+        {/*  <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <button className="bg-white text-blue-600 hover:bg-blue-50 px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg whitespace-nowrap cursor-pointer">
               <i className="ri-calendar-line w-5 h-5 flex items-center justify-center mr-2 inline-flex"></i>
               Schedule a demo
@@ -31,7 +31,7 @@ export default function CallToAction() {
               <i className="ri-download-line w-5 h-5 flex items-center justify-center mr-2 inline-flex"></i>
               Download Brochure
             </button>
-          </div>
+          </div> */}
 
           {/* Contact Info Boxes */}
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">

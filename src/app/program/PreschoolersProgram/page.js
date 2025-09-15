@@ -1,4 +1,5 @@
 import PreschoolersProgram from "../../../components/ourProgram/PreschoolersProgram";
+import CallToAction from "../../../components/home/CallToAction";
 
 export async function generateStaticParams() {
   return [
@@ -7,5 +8,10 @@ export async function generateStaticParams() {
 }
 
 export default function PreschoolersProgramPage() {
-  return <PreschoolersProgram />;
+  return (
+    <>
+      <PreschoolersProgram />
+      <CallToAction />
+    </>
+  );
 }

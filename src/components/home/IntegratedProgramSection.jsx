@@ -1,5 +1,7 @@
 'use client';
 
+import Link from "next/link";
+
 export default function IntegratedProgramSection() {
   return (
     <section className="py-20 bg-gradient-to-br from-blue-50 to-green-50">
@@ -15,7 +17,7 @@ export default function IntegratedProgramSection() {
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
               True development goes beyond academics. By integrating physical activity, emotional support, and healthy lifestyle practices into daily routines, students are better equipped to thrive both in and outside the classroom.
             </p>
-             <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-6 rounded-xl text-white">
+            <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-6 rounded-xl text-white mb-8">
               <div className="flex items-center space-x-4">
                 <i className="ri-star-line w-8 h-8 flex items-center justify-center text-3xl"></i>
                 <div>
@@ -26,6 +28,14 @@ export default function IntegratedProgramSection() {
                 </div>
               </div>
             </div>
+
+            {/* 🔹 Desktop Button */}
+            <Link
+              href="/services/intergratedProgram"
+              className="hidden lg:inline-block px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg shadow-lg hover:opacity-90 transition"
+            >
+              Learn More
+            </Link>
           </div>
           
           <div className="relative">
@@ -67,6 +77,16 @@ export default function IntegratedProgramSection() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* 🔹 Mobile Button */}
+        <div className="mt-12 text-center lg:hidden">
+          <Link
+            href="/program-details"
+            className="inline-block px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg shadow-lg hover:opacity-90 transition"
+          >
+            Learn More
+          </Link>
         </div>
       </div>
     </section>

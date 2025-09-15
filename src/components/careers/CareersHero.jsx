@@ -32,7 +32,14 @@ export default function CareersHero() {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg whitespace-nowrap cursor-pointer">
+            <button 
+              onClick={() => {
+                const formSection = document.getElementById('apply-form');
+                if (formSection) {
+                  formSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg whitespace-nowrap cursor-pointer">
               <i className="ri-file-text-line w-5 h-5 flex items-center justify-center mr-2 inline-flex"></i>
               Apply Now
             </button>

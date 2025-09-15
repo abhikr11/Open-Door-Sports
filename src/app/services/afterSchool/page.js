@@ -4,6 +4,7 @@ import AfterSchoolHero from "../../../components/afterSchool/AfterSchoolHero";
 import AfterFeaturesSection from "../../../components/afterSchool/AfterFeaturesSection";
 import AfterTestimonialsSection from "../../../components/afterSchool/AfterTestimonialsSection";
 import AfterBenefit from "../../../components/afterSchool/AfterBenefit";
+import CallToAction from "../../../components/home/CallToAction";
 
 export default function AfterSchool() {
   return (
@@ -11,6 +12,7 @@ export default function AfterSchool() {
       <AfterSchoolHero/>
       <AfterFeaturesSection />
       <AfterBenefit/>
+      <CallToAction/> 
       {/* <AfterTestimonialsSection /> */}
     </div>
   );

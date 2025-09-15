@@ -1,5 +1,16 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+---
+
+## Credits
+
+This project was originally built by **Avinash Kumar Jha**.  
+GitHub: [https://github.com/Avinash365](https://github.com/Avinash365)  
+
+I have cloned and modified it.
+
+---
+
 ## Getting Started
 
 First, run the development server:

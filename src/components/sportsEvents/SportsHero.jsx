@@ -20,7 +20,7 @@ export default function SportsHero() {
           {/* Left Content */}
           <div className="text-white">
             <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
-              <span className="text-sm font-semibold">🏆 Professional Sports Events</span>
+              {/*<span className="text-sm font-semibold">🏆 Professional Sports Events</span>*/}
             </div>
 
             <h1 className="text-5xl lg:text-7xl font-black mb-6 leading-tight">
@@ -55,10 +55,10 @@ export default function SportsHero() {
                 <i className="ri-calendar-line w-5 h-5 flex items-center justify-center mr-2 inline-flex"></i>
                 Book Your Event
               </button> */}
-              <button className="bg-white/20 backdrop-blur-sm border-2 border-white/30 text-white px-8 py-4 rounded-2xl text-lg font-bold hover:bg-white/30 transition-all duration-300 whitespace-nowrap cursor-pointer">
+              {/*<button className="bg-white/20 backdrop-blur-sm border-2 border-white/30 text-white px-8 py-4 rounded-2xl text-lg font-bold hover:bg-white/30 transition-all duration-300 whitespace-nowrap cursor-pointer">
                 <i className="ri-play-circle-line w-5 h-5 flex items-center justify-center mr-2 inline-flex"></i>
                 Watch Demo
-              </button>
+              </button>*/}
             </div>
           </div>
 
@@ -73,11 +73,11 @@ export default function SportsHero() {
 
               <div className="grid grid-cols-3 gap-4 text-center">
                 <div>
-                  <div className="text-3xl font-bold text-sky-300">500+</div>
+                  <div className="text-3xl font-bold text-sky-300">100+</div>
                   <div className="text-sm text-gray-200">Events Organized</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-cyan-300">15K+</div>
+                  <div className="text-3xl font-bold text-cyan-300">8K+</div>
                   <div className="text-sm text-gray-200">Happy Participants</div>
                 </div>
                 <div>

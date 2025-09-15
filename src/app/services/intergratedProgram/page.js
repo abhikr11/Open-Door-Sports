@@ -5,7 +5,7 @@ import ProgramOverview from "../../../components/intergratedProgram/ProgramOverv
 import KeyElements from "../../../components/intergratedProgram/KeyElements";
 import InclusiveApproach from "../../../components/intergratedProgram/InclusiveApproach";
 import ProgramStats from "../../../components/intergratedProgram/ProgramStats";
-import CallToAction from "../../../components/intergratedProgram/CallToAction";
+import CallToAction from '../../../components/home/CallToAction';
 
 
 export default function Home() {

@@ -17,9 +17,9 @@ export default function BirthdayHero() {
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:w-1/2">
           <div className="mb-6">
-            <span className="inline-block bg-pink-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
+            {/*<span className="inline-block bg-pink-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
               🎉 Birthday Events
-            </span>
+            </span>*/}
           </div>
           
           <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">

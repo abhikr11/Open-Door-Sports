@@ -7,6 +7,7 @@ import { Navbar } from '../../components/navbar/Navbar';
 import GalleryHero from '../../components/gallery/GalleryHero';
 import FilterTabs from '../../components/gallery/FilterTabs';
 import PhotoGrid from '../../components/gallery/PhotoGrid';
+import CallToAction from "../../components/home/CallToAction";
 import Footer from '../../components/footer/Footer';
 
 export default function GalleryPage() {
@@ -19,17 +20,8 @@ export default function GalleryPage() {
       <GalleryHero />
       <FilterTabs activeFilter={activeFilter} onFilterChange={setActiveFilter} />
       <PhotoGrid activeFilter={activeFilter} />
-      
+      <CallToAction />
       {/* Back to Main Page */}
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Ready to Join Our Programs?</h2>
-          <p className="text-xl text-blue-100 mb-8">Explore our age-specific programs and start your child's journey today!</p>
-          <Link href="/#allProgram" className="inline-block bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors cursor-pointer whitespace-nowrap">
-            View All Programs
-          </Link>
-        </div>
-      </div> 
       <Footer/>
     </div>
   );

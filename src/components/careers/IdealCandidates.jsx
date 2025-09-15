@@ -68,10 +68,10 @@ export default function IdealCandidates() {
             <p className="text-lg text-blue-100 mb-6">
               If you're enthusiastic, responsible, and love working with children, we'd love to hear from you.
             </p>
-            <button className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-full font-bold transition-all duration-300 transform hover:scale-105 whitespace-nowrap cursor-pointer">
+            {/*<button className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-full font-bold transition-all duration-300 transform hover:scale-105 whitespace-nowrap cursor-pointer">
               <i className="ri-arrow-right-line w-5 h-5 flex items-center justify-center mr-2 inline-flex"></i>
               Apply Today
-            </button>
+            </button>*/}
           </div>
         </div>
       </div>

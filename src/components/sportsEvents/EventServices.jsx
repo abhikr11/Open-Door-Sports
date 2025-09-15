@@ -6,37 +6,37 @@ export default function EventServices() {
       icon: 'ri-calendar-check-line',
       title: 'Complete Event Planning',
       description: 'From initial concept to final execution, we handle every aspect of your sports event with meticulous attention to detail.',
-      features: ['Event timeline creation', 'Activity scheduling', 'Resource allocation', 'Risk assessment']
+      features: []
     },
     {
       icon: 'ri-team-line',
       title: 'Professional Staff',
       description: 'Our experienced team of coaches and event coordinators ensure smooth operations and participant safety.',
-      features: ['Certified coaches', 'Event coordinators', 'Safety personnel', 'Technical support']
+      features: []
     },
     {
       icon: 'ri-trophy-line',
       title: 'Diverse Activities',
       description: 'We organize a wide range of sporting activities suitable for all age groups and skill levels.',
-      features: ['Track and field events', 'Team sports', 'Fun games', 'Competitive tournaments']
+      features: []
     },
     {
       icon: 'ri-shield-check-line',
       title: 'Safety First',
-      description: 'All activities are conducted with highest safety standards and proper medical support on-site.',
-      features: ['Safety protocols', 'Medical assistance', 'Equipment inspection', 'Emergency procedures']
+      description: 'All activities are conducted with highest safety standards.',
+      features: []
     },
     {
       icon: 'ri-settings-3-line',
       title: 'Equipment & Setup',
-      description: 'We provide all necessary sports equipment and handle complete venue setup and management.',
-      features: ['Sports equipment', 'Venue decoration', 'Audio system', 'Awards ceremony setup']
+      description: 'We provide all essential sports equipment in collaboration with the school.',
+      features: []
     },
     {
       icon: 'ri-camera-line',
-      title: 'Documentation',
-      description: 'Professional photography and videography services to capture memorable moments of your event.',
-      features: ['Event photography', 'Award ceremony videos', 'Highlight reels', 'Digital gallery']
+      title: 'Award Distribution',
+      description: 'Celebrating excellence through recognition and award distribution.',
+      features: []
     }
   ];
 
