@@ -10,9 +10,8 @@ export const FloatingWhatsApp = () => {
       href={whatsappURL}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-3 right-3 z-50 w-11 h-11 flex items-center justify-center rounded-full bg-green-500 shadow-lg hover:bg-green-600 transition-all duration-300 hover:scale-105"
+      className="fixed bottom-4 right-4 z-50 w-12 h-12 flex items-center justify-center rounded-full bg-green-500 shadow-lg hover:bg-green-600 transition-all duration-300 hover:scale-105 animate-bounce"
     >
-      {/* WhatsApp icon from Remix Icons */}
       <i className="ri-whatsapp-line text-white text-3xl"></i>
     </a>
   );

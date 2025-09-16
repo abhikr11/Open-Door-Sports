@@ -19,7 +19,7 @@ const SchoolName = ({ className = "" }) => {
         </h2>
         <div className="flex items-center w-fit mx-auto">
           <Line />
-          <p className="mx-2 text-[7px] sm:text-[10.5px] gradient-text">
+          <p className="mx-2 text-[6.5px] sm:text-[10.5px] gradient-text">
             Come, Let's Play Together
           </p>
           <Line />

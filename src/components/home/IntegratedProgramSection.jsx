@@ -82,7 +82,7 @@ export default function IntegratedProgramSection() {
         {/* 🔹 Mobile Button */}
         <div className="mt-12 text-center lg:hidden">
           <Link
-            href="/program-details"
+            href="/services/intergratedProgram"
             className="inline-block px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg shadow-lg hover:opacity-90 transition"
           >
             Learn More

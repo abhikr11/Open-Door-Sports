@@ -139,8 +139,8 @@ export default function ProgramsSection() {
                 ))}
               </div>
 
-              <div className="mt-12 text-center">
-                <button className="bg-gradient-to-r from-orange-500 to-pink-500 text-white  px-8 py-4 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 whitespace-nowrap cursor-pointer">
+              <div className="mt-10 text-center">
+                <button className="bg-gradient-to-r from-orange-500 to-pink-500 text-white  px-3 py-3 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 whitespace-nowrap cursor-pointer">
                   Find the Right Program
                 </button>
               </div>

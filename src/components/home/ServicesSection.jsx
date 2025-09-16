@@ -78,12 +78,12 @@ export default function ServicesSection() {
               </div>
 
               <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
-              <p className="text-gray-600 mb-4 text-sm">{service.description}</p>
+              <p className="text-gray-600 mb-4  text-base font-medium">{service.description}</p>
 
               {/* Features */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 mb-6">
                 {service.features.map((feature, idx) => (
-                  <div key={idx} className="flex items-center text-gray-700 text-sm">
+                  <div key={idx} className="flex items-center text-gray-700 text-base leading-relaxed">
                     <div className={`w-2 h-2 bg-gradient-to-r ${service.color} rounded-full mr-2`}></div>
                     {feature}
                   </div>
