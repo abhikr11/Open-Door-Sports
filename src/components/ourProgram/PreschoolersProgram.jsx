@@ -57,7 +57,7 @@ export default function PreschoolersProgram() {
               <div className="inline-block bg-white/20 backdrop-blur-sm text-white px-6 py-2 rounded-full text-sm font-semibold mb-4">
                 Ages 4.5 to 7 years
               </div>
-              <h1 className="text-6xl font-black text-white mb-6">
+              <h1 className="text-5xl sm:text-6xl font-black text-white mb-6">
                 Preschoolers <span className="text-yellow-200">Program</span>
               </h1>
               <p className="text-xl text-white/90 mb-8 leading-relaxed">
