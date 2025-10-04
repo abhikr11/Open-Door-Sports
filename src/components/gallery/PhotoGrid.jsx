@@ -10,7 +10,9 @@ export default function PhotoGrid({ activeFilter }) {
   const [selectedPhoto, setSelectedPhoto] = useState(null);
   const [videosPlaylist, setVideosPlaylist] = useState([]);
   const [eventsPlaylist, setEventsPlaylist] = useState([]);
+  const [photos, setPhotos] = useState([]);
 
+  // ------------------ FETCH PLAYLIST ------------------
   const fetchPlaylist = async (playlistId, setState) => {
     try {
       const res = await fetch(
@@ -25,7 +27,6 @@ export default function PhotoGrid({ activeFilter }) {
           description: item.snippet.description,
           type: 'video',
           videoUrl: `https://www.youtube.com/embed/${item.snippet.resourceId.videoId}`,
-          duration: '', // optional
         }));
         setState(videos);
       }
@@ -39,70 +40,44 @@ export default function PhotoGrid({ activeFilter }) {
     fetchPlaylist(EVENTS_PLAYLIST_ID, setEventsPlaylist);
   }, []);
 
-  // Your static photos
-  const photos = [
-    {
-      id: '1',
-      src: 'https://res.cloudinary.com/dxda8byqi/image/upload/v1758886670/WhatsApp_Image_2025-06-05_at_5.06.49_PM_afn84o.jpg',
-      alt: 'Toddlers Playing',
-      category: 'toddlers',
-      type: 'photo'
-    },
-    {
-      id: '2',
-      src: 'https://res.cloudinary.com/dxda8byqi/image/upload/v1758884306/WhatsApp_Image_2025-08-25_at_8.28.53_PM_mr6wnu.jpg',
-      alt: 'Toddlers Playing',
-      category: 'toddlers',
-      type: 'photo'
-    },
-    {
-      id: '3',
-      src: 'https://res.cloudinary.com/dxda8byqi/image/upload/v1758890392/WhatsApp_Image_2025-06-05_at_4.58.23_PM_pkdr3s.jpg',
-      alt: 'Toddlers Playing',
-      category: 'toddlers',
-      type: 'photo'
-    },
-    {
-      id: '4',
-      src: 'https://res.cloudinary.com/dxda8byqi/image/upload/v1758890402/WhatsApp_Image_2025-06-05_at_5.02.44_PM_1_aqk02b.jpg',
-      alt: 'Toddlers Playing',
-      category: 'toddlers',
-      type: 'photo'
-    },
-    {
-      id: '5',
-      src: 'https://res.cloudinary.com/dxda8byqi/image/upload/v1758890480/WhatsApp_Image_2025-06-05_at_4.58.29_PM_wws2kk.jpg',
-      alt: 'Toddlers Playing',
-      category: 'toddlers',
-      type: 'photo'
-    },
-    {
-      id: '6',
-      src: 'https://res.cloudinary.com/dxda8byqi/image/upload/v1758890642/WhatsApp_Image_2025-06-05_at_4.56.37_PM_sibq7f.jpg',
-      alt: 'Toddlers Playing',
-      category: 'toddlers',
-      type: 'photo'
-    },
-    {
-      id: '7',
-      src: 'https://res.cloudinary.com/dxda8byqi/image/upload/v1758890475/WhatsApp_Image_2025-06-05_at_4.58.30_PM_n7fczk.jpg',
-      alt: 'Toddlers Playing',
-      category: 'toddlers',
-      type: 'photo'
-    },
-    {
-      id: '8',
-      src: 'https://res.cloudinary.com/dxda8byqi/image/upload/v1758890484/WhatsApp_Image_2025-06-05_at_4.58.28_PM_e9lvwu.jpg',
-      alt: 'Toddlers Playing',
-      category: 'toddlers',
-      type: 'photo'
-    }
-  ];
+  // ------------------ FETCH CLOUDINARY PHOTOS ------------------
+  useEffect(() => {
+    const fetchImages = async () => {
+      try {
+        const res = await fetch('/api/images');
+        const data = await res.json();
 
+        const formatted = data.map((url, index) => ({
+          id: `photo-${index}`,
+          src: url,
+          alt: `Photo ${index + 1}`,
+          type: 'photo'
+        }));
+
+        setPhotos(formatted);
+      } catch (error) {
+        console.error('Error fetching images:', error);
+      }
+    };
+
+    fetchImages();
+  }, []);
+
+  // ------------------ SHUFFLE HELPER ------------------
+  const shuffleArray = (array) => {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  };
+
+  // ------------------ FILTER LOGIC ------------------
   const getFilteredPhotos = () => {
     switch (activeFilter) {
       case 'all':
-        return [...photos, ...videosPlaylist, ...eventsPlaylist];
+        return shuffleArray([...photos, ...videosPlaylist, ...eventsPlaylist]);
       case 'photos':
         return photos;
       case 'videos':
@@ -110,12 +85,13 @@ export default function PhotoGrid({ activeFilter }) {
       case 'events':
         return eventsPlaylist;
       default:
-        return photos.filter((p) => p.category === activeFilter);
+        return photos;
     }
   };
 
   const filteredPhotos = getFilteredPhotos();
 
+  // ------------------ RENDER ------------------
   return (
     <>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
