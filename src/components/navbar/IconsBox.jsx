@@ -3,12 +3,13 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Dropdown } from "./Dropdown";
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 export const IconsBox = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const iconStyle =
-    "text-xl text-nav-text cursor-pointer transition-transform duration-300 hover:scale-110 hover:text-purple-500";
+    "w-6 h-6 text-nav-text cursor-pointer transition-transform duration-300 hover:scale-110 hover:text-purple-500";
 
   return (
     <div className="gap-6 flex items-center">
@@ -47,19 +48,22 @@ export const IconsBox = () => {
 
       {/* Mobile menu icon */}
       <div className="relative lg:hidden cursor-pointer">
-        <i
-          className={`ri-menu-3-line ${iconStyle}`}
-          onClick={() => setIsOpen(!isOpen)}
-        ></i>
+        <button onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? (
+            <XMarkIcon className={iconStyle} />
+          ) : (
+            <Bars3Icon className={iconStyle} />
+          )}
+        </button>
 
         <AnimatePresence>
           {isOpen && (
             <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.8 }}
-              className="absolute -right-6 -top-3 rounded-sm"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.3 }}
+              className="fixed top-[73px] left-0 w-full h-[calc(100vh-70px)] z-50 overflow-y-auto"
             >
               <Dropdown onClose={() => setIsOpen(false)} />
             </motion.div>

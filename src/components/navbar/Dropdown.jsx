@@ -23,14 +23,8 @@ export const Dropdown = ({ onClose }) => {
         damping: 15,
         mass: 0.5,
       }}
-      className="grid grid-cols-1 min-w-[220px] bg-white border border-white rounded-3xl shadow-md pt-6 pb-2 space-y-2"
+      className="grid grid-cols-1 min-w-[220px] bg-white border border-white shadow-md pt-2 pb-1 space-y-2 pl-6"
     >
-      {/* Close Icon */}
-      <XMarkIcon
-        className="w-7 h-7 cursor-pointer mx-auto mr-2 text-nav-text"
-        onClick={onClose}
-      />
-
       {/* Nav Links */}
       <NavLink to="/" text="Home" onClick={onClose} />
       <NavLink to="/about" text="About Us" onClick={onClose} />
@@ -55,12 +49,12 @@ export const Dropdown = ({ onClose }) => {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="pl-4 space-y-1"
+            className="pl-6 space-y-1 flex flex-col"
           >
-            <NavLink to="/services/sports" className="text-[10px] text-[#373755]" text="Sports" onClick={onClose} />
-            <NavLink to="/services/birthdayEvents" className="text-[10px] text-[#373755]" text="Birthday Events" onClick={onClose} />
-            <NavLink to="/services/parentToddler" className="text-[10px] text-[#373755]" text="Parent Toddler" onClick={onClose} />
-            <NavLink to="/services/afterSchool" className="text-[10px] text-[#373755]" text="After School" onClick={onClose} />
+            <NavLink to="/services/sports" className="text-[10px] text-[#0408C3]" text="Sports" onClick={onClose} />
+            <NavLink to="/services/birthdayEvents" className="text-[10px] text-[#0408C3]" text="Birthday Events" onClick={onClose} />
+            <NavLink to="/services/parentToddler" className="text-[10px] text-[#0408C3]" text="Parent Toddler" onClick={onClose} />
+            <NavLink to="/services/afterSchool" className="text-[10px] text-[#0408C3]" text="After School" onClick={onClose} />
           </motion.div>
         )}
       </AnimatePresence>
@@ -85,13 +79,13 @@ export const Dropdown = ({ onClose }) => {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="pl-4 space-y-1"
+            className="pl-6 space-y-1 flex flex-col"
           >
-            <NavLink to="/program/toddlersProgram" className="text-[10px] text-[#373755]" text="Toddlers" onClick={onClose} />
-            <NavLink to="/program/PreschoolersProgram" className="text-[10px] text-[#373755]" text="Preschoolers" onClick={onClose} />
-            <NavLink to="/program/preLevelProgram" className="text-[10px] text-[#373755]" text="Prep Level" onClick={onClose} />
-            <NavLink to="/program/abovePrepProgram" className="text-[10px] text-[#373755]" text="Above Prep Level" onClick={onClose} />
-            <NavLink to="/services/intergratedProgram" className="text-[10px] text-[#373755]" text="Intergrated" onClick={onClose} />
+            <NavLink to="/program/toddlersProgram" className="text-[10px] text-[#0408C3]" text="Toddlers" onClick={onClose} />
+            <NavLink to="/program/PreschoolersProgram" className="text-[10px] text-[#0408C3]" text="Preschoolers" onClick={onClose} />
+            <NavLink to="/program/preLevelProgram" className="text-[10px] text-[#0408C3]" text="Prep Level" onClick={onClose} />
+            <NavLink to="/program/abovePrepProgram" className="text-[10px] text-[#0408C3]" text="Above Prep Level" onClick={onClose} />
+            <NavLink to="/services/intergratedProgram" className="text-[10px] text-[#0408C3]" text="Intergrated" onClick={onClose} />
           </motion.div>
         )}
       </AnimatePresence>
@@ -101,7 +95,7 @@ export const Dropdown = ({ onClose }) => {
       <NavLink to="/careers" text="Careers" onClick={onClose} />
 
       {/* Social Icons (mobile only) */}
-      <div className="flex justify-center gap-4 mt-4 xl:hidden">
+      <div className="flex justify-center gap-8 mt-1 xl:hidden">
         <a
           href="https://www.facebook.com/opendoorsports19/"
           target="_blank"
