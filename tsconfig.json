@@ -16,7 +16,7 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "plugins": [
       {
         "name": "next"
@@ -27,8 +27,20 @@
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "src/app/not-found.js", "src/components/sportsEvents/EventContact.jsx", "src/components/parentToddler/TestimonialsSection.jsx", "src/components/parentToddler/BenefitsSection.jsx", "src/components/parentToddler/CTASection.jsx", "src/components/parentToddler/Footer.jsx", "src/components/parentToddler/Header.jsx", "src/components/parentToddler/HeroSection.jsx", "src/components/parentToddler/ProgramDetailsSection.jsx", "src/components/parentToddler/ProgramOverview.jsx", "src/app/services/parentToddler/page.jsx"  ],
+    "**/*.tsx",
+    "src/app/not-found.js",
+    "src/components/sportsEvents/EventContact.jsx",
+    "src/components/parentToddler/TestimonialsSection.jsx",
+    "src/components/parentToddler/BenefitsSection.jsx",
+    "src/components/parentToddler/CTASection.jsx",
+    "src/components/parentToddler/Footer.jsx",
+    "src/components/parentToddler/Header.jsx",
+    "src/components/parentToddler/HeroSection.jsx",
+    "src/components/parentToddler/ProgramDetailsSection.jsx",
+    "src/components/parentToddler/ProgramOverview.jsx",
+    "src/app/services/parentToddler/page.jsx",
+    ".next/dev/types/**/*.ts"
+  ],
   "exclude": [
     "node_modules"
   ]
